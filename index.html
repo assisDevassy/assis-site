@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assis Devassy | Marketing Engineer &amp; AI Marketing Automation</title>
+  <meta name="description" content="Assis Devassy is a Marketing Engineer focused on AI marketing automation, workflow design, agentic systems, APIs, and marketing operations. Explore projects and measurable marketing outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Assis Devassy | Marketing Engineer &amp; AI Marketing Automation">
+  <meta property="og:description" content="Assis Devassy is a Marketing Engineer focused on AI marketing automation, workflow design, agentic systems, APIs, and marketing operations. Explore projects and measurable marketing outcomes.">
+  <meta name="theme-color" content="#F6F3EC">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter & JetBrains Mono (with clean system sans-serif fallbacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="progress-wrap" aria-hidden="true">
+    <div id="scroll-progress"></div>
+  </div>
+
+  <!-- Toast Feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-dot"></span>
+    <span id="toast-message">Copied to clipboard</span>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand-link">
+        <span class="brand-monogram">AD</span>
+        <div class="brand-text">
+          <span class="brand-name">ASSIS DEVASSY</span>
+          <span class="brand-role">Marketing Engineer</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#what-i-work-on">What I Work On</a>
+        <a href="#selected-work">Selected Work</a>
+        <a href="#how-i-work">How I Work</a>
+        <a href="#background">Background &amp; Toolkit</a>
+        <button type="button" id="open-resume-btn" class="nav-cv-btn">
+          <span>CV / Experience</span>
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+
+      <button type="button" id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span id="menu-icon-open" style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600;">MENU ☰</span><span id="menu-icon-close" class="hidden" style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600;">CLOSE ✕</span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="mobile-drawer hidden">
+      <a href="#what-i-work-on" class="mobile-nav-link"><span>What I Work On</span><span>→</span></a>
+      <a href="#selected-work" class="mobile-nav-link"><span>Selected Work</span><span>→</span></a>
+      <a href="#how-i-work" class="mobile-nav-link"><span>How I Work</span><span>→</span></a>
+      <a href="#background" class="mobile-nav-link"><span>Background &amp; Toolkit</span><span>→</span></a>
+      <button type="button" id="open-resume-mobile-btn" class="drawer-link" style="color: var(--blue-accent); font-weight: 600;">
+        <span>View Full CV / Experience</span>
+        <span>→</span>
+      </button>
+      <div class="mobile-drawer-ctas">
+        <a href="#selected-work" class="mobile-nav-link btn btn-secondary btn-sm" style="flex: 1; justify-content: center;">Explore Selected Work</a>
+        <a href="#contact" class="mobile-nav-link btn btn-primary btn-sm" style="flex: 1; justify-content: center;">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" style="flex: 1;">
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Exact Positioning & Website Copy -->
+          <div>
+            <div class="role-pill">
+              <span class="role-pill-dot"></span>
+              <span>Marketing Engineer · AI Marketing Automation · GTM Systems</span>
+            </div>
+
+            <p class="hero-name">ASSIS DEVASSY</p>
+
+            <h1 class="hero-title">
+              I turn marketing workflows into systems that work.
+            </h1>
+
+            <div class="hero-copy">
+              <p>
+                I combine marketing expertise with automation and AI systems design to reduce repetitive work, connect tools, and make execution more reliable.
+              </p>
+              <p>
+                I start with the business problem, break down the workflow, and choose the right approach: a script for predictable tasks, an AI agent where judgment or adaptation helps, or a hybrid system when the work needs both. Human review stays where it matters.
+              </p>
+            </div>
+
+            <div class="hero-ctas">
+              <a href="#selected-work" class="btn btn-primary">
+                <span>Explore Selected Work</span>
+                <span aria-hidden="true">↓</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get in Touch</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- Quantified Proof Strip -->
+            <div class="metrics-strip">
+              <div>
+                <p class="metric-val">50%</p>
+                <p class="metric-label">Faster creative turnaround via GenAI + n8n</p>
+              </div>
+              <div>
+                <p class="metric-val">~60 hrs</p>
+                <p class="metric-label">Working hours recovered per month</p>
+              </div>
+              <div>
+                <p class="metric-val">190/190</p>
+                <p class="metric-label">Automated tests passing in ACDE engine</p>
+              </div>
+              <div>
+                <p class="metric-val">6+ yrs</p>
+                <p class="metric-label">Marketing strategy, ops &amp; systems design</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Architectural Profile & Portrait Slot -->
+          <div class="card blueprint-card">
+            <div class="blueprint-head">
+              <div class="blueprint-head-left">
+                <span class="role-pill-dot"></span>
+                <span>Profile &amp; System Routing</span>
+              </div>
+              <label for="photo-upload-input" class="photo-upload-label" title="Test how your photo looks in this frame">
+                <span id="photo-action-label">+ Preview Photo</span>
+              </label>
+              <input id="photo-upload-input" type="file" accept="image/*" class="hidden">
+            </div>
+
+            <!-- Portrait Slot (Ready for User's Photo) -->
+            <div class="portrait-box">
+              <div id="portrait-container" class="portrait-frame">
+                <img id="portrait-preview" src="" alt="Assis Devassy" class="hidden">
+                <div id="portrait-placeholder" style="text-align: center;">
+                  <span class="portrait-initials">AD</span>
+                  <span class="portrait-sub" style="display: block;">Photo Slot</span>
+                </div>
+              </div>
+              <div class="portrait-meta">
+                <h2>Assis Devassy</h2>
+                <p>Marketing Engineer · AI &amp; GTM Systems</p>
+                <p class="sub-org">TNP Consultants · 9 Global Subsidiaries</p>
+                <button type="button" id="reset-photo-btn" class="hidden" style="margin-top: 6px; font-family: var(--font-mono); font-size: 0.68rem; color: var(--blue-accent); text-decoration: underline;">
+                  Reset photo preview
+                </button>
+              </div>
+            </div>
+
+            <!-- Execution Architecture Diagram -->
+            <div class="arch-diagram">
+              <div class="arch-meta-row">
+                <span>WORKFLOW ROUTING ARCHITECTURE</span>
+                <span>HUMAN-IN-THE-LOOP</span>
+              </div>
+
+              <div class="arch-node">
+                <div class="arch-node-top">
+                  <span>01 · START</span>
+                  <span>Business Problem</span>
+                </div>
+                <p class="arch-node-title">Break down workflow, inputs, dependencies &amp; bottlenecks</p>
+              </div>
+
+              <div class="arch-arrow" aria-hidden="true">↓</div>
+
+              <div class="arch-tri-grid">
+                <div class="arch-tri-cell">
+                  <span class="tri-tag">SCRIPT</span>
+                  <span class="tri-desc">Predictable tasks</span>
+                </div>
+                <div class="arch-tri-cell active">
+                  <span class="tri-tag">AI AGENT</span>
+                  <span class="tri-desc">Judgment &amp; adaptation</span>
+                </div>
+                <div class="arch-tri-cell">
+                  <span class="tri-tag">HYBRID</span>
+                  <span class="tri-desc">When work needs both</span>
+                </div>
+              </div>
+
+              <div class="arch-arrow" aria-hidden="true">↓</div>
+
+              <div class="arch-gate">
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.64rem; font-weight: 600; text-transform: uppercase; color: var(--blue-accent); display: block;">Control Boundary</span>
+                  <span style="font-size: 0.8rem; font-weight: 600; color: var(--blue-900);">Human review stays where it matters</span>
+                </div>
+                <span class="arch-gate-badge">QA Gate</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 1: WHAT I WORK ON ============ -->
+    <section id="what-i-work-on" class="section">
+      <div class="container">
+        <div>
+          <span class="eyebrow">01 · Capabilities</span>
+          <h2 class="section-title">What I work on</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <article class="card pillar-card">
+            <div>
+              <div class="pillar-top">
+                <span class="pillar-badge">01 / WORKFLOWS</span>
+                <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-accent);">→</span>
+              </div>
+              <h3 class="pillar-title">Marketing Workflow Automation</h3>
+              <p class="pillar-desc">
+                Turning recurring marketing tasks into repeatable workflows. From content operations to reporting and campaign processes, I look for bottlenecks, remove unnecessary manual steps, and make the workflow easier to maintain.
+              </p>
+            </div>
+            <div class="tag-row">
+              <span class="mini-tag">Content Operations</span>
+              <span class="mini-tag">Reporting</span>
+              <span class="mini-tag">Campaign Processes</span>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="card pillar-card">
+            <div>
+              <div class="pillar-top">
+                <span class="pillar-badge">02 / AGENTS &amp; HITL</span>
+                <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-accent);">→</span>
+              </div>
+              <h3 class="pillar-title">AI Agents &amp; Human-in-the-Loop Systems</h3>
+              <p class="pillar-desc">
+                Building agent-assisted workflows with defined responsibilities, structured outputs, quality checks, and approval points. The goal is not maximum autonomy. It is useful automation with clear boundaries.
+              </p>
+            </div>
+            <div class="tag-row">
+              <span class="mini-tag">Structured Outputs</span>
+              <span class="mini-tag">Quality Checks</span>
+              <span class="mini-tag">Approval Points</span>
+            </div>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="card pillar-card">
+            <div>
+              <div class="pillar-top">
+                <span class="pillar-badge">03 / INTEGRATIONS</span>
+                <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-accent);">→</span>
+              </div>
+              <h3 class="pillar-title">Marketing Operations &amp; Integrations</h3>
+              <p class="pillar-desc">
+                Connecting marketing tools and processes through workflow automation, APIs, webhooks, and data flows. I bring together marketing execution, analytics, and systems thinking to make work more consistent and measurable.
+              </p>
+            </div>
+            <div class="tag-row">
+              <span class="mini-tag">Workflow Automation</span>
+              <span class="mini-tag">APIs &amp; Webhooks</span>
+              <span class="mini-tag">Data Flows</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2: SELECTED WORK ============ -->
+    <section id="selected-work" class="section">
+      <div class="container">
+        <div class="work-header-bar">
+          <div>
+            <span class="eyebrow">02 · Portfolio</span>
+            <h2 class="section-title">Selected work</h2>
+            <p class="section-intro">
+              A mix of marketing systems built in professional roles and independent AI systems projects. This portfolio will grow as more work is documented.
+            </p>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter selected work">
+            <button type="button" data-filter="all" class="filter-btn work-filter-btn active">All Systems (3)</button>
+            <button type="button" data-filter="professional" class="filter-btn work-filter-btn">Professional Role</button>
+            <button type="button" data-filter="independent" class="filter-btn work-filter-btn">Independent Systems</button>
+          </div>
+        </div>
+
+        <div id="work-cards-container" class="work-stack">
+
+          <!-- System 1: Marketing Production Automation -->
+          <article data-category="professional" class="card work-card">
+            <div class="work-card-meta">
+              <div class="work-meta-left">
+                <span class="work-index">01</span>
+                <span class="work-tag">Professional work · TNP Consultants</span>
+              </div>
+              <button type="button" data-target="arch-01" class="inspect-btn toggle-arch-btn">
+                <span>Inspect System Flow</span>
+              </button>
+            </div>
+
+            <h3 class="work-title">Marketing Production Automation</h3>
+
+            <div class="work-body">
+              <p>
+                Built generative-AI and n8n workflows to make creative production more repeatable across a multi-market marketing function.
+              </p>
+            </div>
+
+            <div class="callout-box">
+              <strong>Reported outcomes:</strong> 50% faster creative turnaround, 600+ strategic brand assets produced, and approximately 60 working hours recovered per month.
+            </div>
+
+            <div id="arch-01" class="flow-panel hidden">
+              <p class="flow-panel-title">System Pipeline · Multi-Market Creative Production</p>
+              <div class="flow-steps-grid cols-5">
+                <div class="flow-step">
+                  <span class="flow-step-num">STEP 01</span>
+                  <span class="flow-step-name">Structured Brief</span>
+                  <span class="flow-step-desc">Multi-subsidiary brand &amp; campaign inputs</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">STEP 02</span>
+                  <span class="flow-step-name">n8n Orchestration</span>
+                  <span class="flow-step-desc">Deterministic routing &amp; asset parameters</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">STEP 03</span>
+                  <span class="flow-step-name">GenAI Synthesis</span>
+                  <span class="flow-step-desc">Repeatable multi-market creative generation</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">STEP 04 · GATE</span>
+                  <span class="flow-step-name">Human Brand QA</span>
+                  <span class="flow-step-desc">Editorial &amp; stakeholder review gate</span>
+                </div>
+                <div class="flow-step highlight">
+                  <span class="flow-step-num">OUTCOME</span>
+                  <span class="flow-step-name">600+ Brand Assets</span>
+                  <span class="flow-step-desc">50% faster · ~60 hrs/mo recovered</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 2: Hermes Agent Operating System -->
+          <article data-category="independent" class="card work-card">
+            <div class="work-card-meta">
+              <div class="work-meta-left">
+                <span class="work-index">02</span>
+                <span class="work-tag">Independent systems project</span>
+              </div>
+              <button type="button" data-target="arch-02" class="inspect-btn toggle-arch-btn">
+                <span>Inspect System Flow</span>
+              </button>
+            </div>
+
+            <h3 class="work-title">Hermes Agent Operating System</h3>
+
+            <div class="work-body">
+              <p>
+                Built and operate a personal agent environment for coordinating specialist agents, reusable skills, persistent memory, and scheduled workflows.
+              </p>
+              <p>
+                The system is designed around clear roles, scoped permissions, and explicit stop conditions. Predictable work belongs in deterministic code; work that requires judgment can be delegated to an agent.
+              </p>
+            </div>
+
+            <div id="arch-02" class="flow-panel hidden">
+              <p class="flow-panel-title">Architecture · Hermes Agent Environment</p>
+              <div class="flow-steps-grid cols-4">
+                <div class="flow-step">
+                  <span class="flow-step-num">DETERMINISTIC CODE</span>
+                  <span class="flow-step-name">Predictable Work</span>
+                  <span class="flow-step-desc">Scripts &amp; scheduled workflows handle fixed logic</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">AGENT DELEGATION</span>
+                  <span class="flow-step-name">Specialist Agents</span>
+                  <span class="flow-step-desc">Clear roles &amp; reusable modular skills</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">CONTEXT LAYER</span>
+                  <span class="flow-step-name">Persistent Memory</span>
+                  <span class="flow-step-desc">State continuity across scheduled executions</span>
+                </div>
+                <div class="flow-step highlight">
+                  <span class="flow-step-num">CONTROL BOUNDARY</span>
+                  <span class="flow-step-name">Explicit Stop Conditions</span>
+                  <span class="flow-step-desc">Scoped permissions &amp; safe execution limits</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 3: AI Campaign Decision Engine (ACDE) -->
+          <article data-category="independent" class="card work-card">
+            <div class="work-card-meta">
+              <div class="work-meta-left">
+                <span class="work-index">03</span>
+                <span class="work-tag">Independent project · In progress · Dry-run only</span>
+              </div>
+              <button type="button" data-target="arch-03" class="inspect-btn toggle-arch-btn">
+                <span>Inspect System Flow</span>
+              </button>
+            </div>
+
+            <h3 class="work-title">AI Campaign Decision Engine (ACDE)</h3>
+
+            <div class="work-body">
+              <p>
+                An evidence-to-action system for marketing decisions. It takes structured evidence, produces a typed decision, routes work through specialist analysis, production and QA, and keeps consequential actions behind human approval.
+              </p>
+              <p>
+                The implementation includes deterministic routing, a versioned rulebook, an append-only execution ledger, and evaluation checks. Its latest verification includes 190 passing automated tests, 27 LLM shadow runs, and five human-adjudicated cases.
+              </p>
+            </div>
+
+            <div class="callout-box boundary">
+              <strong>Current boundary:</strong> ACDE runs in dry-run mode. It does not publish campaigns, change ad spend, or mutate CRM records.
+            </div>
+
+            <div id="arch-03" class="flow-panel hidden">
+              <p class="flow-panel-title">Evidence-to-Action Pipeline · 190 Passing Tests · 27 Shadow Runs · 5 Adjudicated Cases</p>
+              <div class="flow-steps-grid cols-6">
+                <div class="flow-step">
+                  <span class="flow-step-num">01 · INPUT</span>
+                  <span class="flow-step-name">Structured Evidence</span>
+                  <span class="flow-step-desc">Validated schema</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">02 · RULEBOOK</span>
+                  <span class="flow-step-name">Typed Decision</span>
+                  <span class="flow-step-desc">Deterministic routing</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">03 · SPECIALIST</span>
+                  <span class="flow-step-name">Analysis</span>
+                  <span class="flow-step-desc">Scoped reasoning</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">04 · SPECIALIST</span>
+                  <span class="flow-step-name">Production</span>
+                  <span class="flow-step-desc">Structured output</span>
+                </div>
+                <div class="flow-step">
+                  <span class="flow-step-num">05 · LEDGER</span>
+                  <span class="flow-step-name">QA &amp; Eval Checks</span>
+                  <span class="flow-step-desc">Append-only log</span>
+                </div>
+                <div class="flow-step highlight">
+                  <span class="flow-step-num">06 · GATE</span>
+                  <span class="flow-step-name">Human Approval</span>
+                  <span class="flow-step-desc">Dry-run boundary</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Additional Marketing Outcomes -->
+        <div class="card outcomes-wrapper">
+          <div class="outcomes-head">
+            <span class="role-pill-dot"></span>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--blue-900);">
+              Additional marketing outcomes
+            </h3>
+          </div>
+
+          <div class="outcomes-grid">
+            <div class="outcome-item">
+              <div class="outcome-item-top">
+                <span class="outcome-item-title">Organic growth</span>
+                <span class="outcome-badge">+47% Sessions · 14 → 63 Top-10</span>
+              </div>
+              <p style="font-size: 0.95rem; color: var(--blue-700);">
+                47% increase in organic sessions; top-10 keyword rankings grew from 14 to 63 over 12 months.
+              </p>
+            </div>
+
+            <div class="outcome-item">
+              <div class="outcome-item-top">
+                <span class="outcome-item-title">Conversion optimization</span>
+                <span class="outcome-badge">+28% Lift · -19% CAC</span>
+              </div>
+              <p style="font-size: 0.95rem; color: var(--blue-700);">
+                28% lift in landing-page conversion and 19% reduction in acquisition cost, supported by GA4 analysis and 40+ A/B tests.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3: HOW I WORK ============ -->
+    <section id="how-i-work" class="section section-alt">
+      <div class="container">
+        <div>
+          <span class="eyebrow">03 · Process</span>
+          <h2 class="section-title">How I work</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="card process-card">
+            <div>
+              <div class="process-top">
+                <span class="process-num">01</span>
+                <span class="process-phase">Objective</span>
+              </div>
+              <h3 class="process-title">01 · Understand the work</h3>
+              <p class="process-desc">
+                Start with the business objective, the people involved, and the current process.
+              </p>
+            </div>
+          </div>
+
+          <div class="card process-card">
+            <div>
+              <div class="process-top">
+                <span class="process-num">02</span>
+                <span class="process-phase">Decompose</span>
+              </div>
+              <h3 class="process-title">02 · Break down the workflow</h3>
+              <p class="process-desc">
+                Map the inputs, outputs, dependencies, repetitive steps, decision points, and failure cases.
+              </p>
+            </div>
+          </div>
+
+          <div class="card process-card">
+            <div>
+              <div class="process-top">
+                <span class="process-num">03</span>
+                <span class="process-phase">Select</span>
+              </div>
+              <h3 class="process-title">03 · Choose the simplest effective solution</h3>
+              <p class="process-desc">
+                Use existing automation, scripts, APIs, AI agents, or a hybrid approach. Avoid adding complexity without a clear reason.
+              </p>
+            </div>
+          </div>
+
+          <div class="card process-card">
+            <div>
+              <div class="process-top">
+                <span class="process-num">04</span>
+                <span class="process-phase">Govern</span>
+              </div>
+              <h3 class="process-title">04 · Build in controls</h3>
+              <p class="process-desc">
+                Use validation, QA, logs, stop conditions, and human approval wherever the risks justify them.
+              </p>
+            </div>
+          </div>
+
+          <div class="card process-card">
+            <div>
+              <div class="process-top">
+                <span class="process-num">05</span>
+                <span class="process-phase">Iterate</span>
+              </div>
+              <h3 class="process-title">05 · Measure and improve</h3>
+              <p class="process-desc">
+                Check whether the system works as intended, document what fails, and improve it using observed results rather than assumptions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4: BACKGROUND & TOOLKIT ============ -->
+    <section id="background" class="section">
+      <div class="container">
+        <div class="toolkit-layout">
+
+          <!-- Left Column: Background Copy & Experience Summary -->
+          <div>
+            <span class="eyebrow">04 · Experience &amp; Stack</span>
+            <h2 class="section-title" style="margin-bottom: 18px;">Background &amp; toolkit</h2>
+            <p style="font-size: 1.05rem; color: var(--blue-700); line-height: 1.68;">
+              I have 6+ years of experience across marketing strategy, content operations, SEO, conversion optimization, analytics, and brand systems. In my current role at TNP Consultants, I work across a consultancy group with nine global subsidiaries and collaborate directly with senior stakeholders.
+            </p>
+
+            <div class="career-snapshot">
+              <div class="career-snapshot-head">
+                <span style="color: var(--blue-900);">EXPERIENCE TIMELINE</span>
+                <button type="button" id="open-resume-inline-btn" style="color: var(--blue-accent); text-decoration: underline;">
+                  Full 1-Page CV →
+                </button>
+              </div>
+              <ul class="career-list">
+                <li>
+                  <strong>TNP Consultants (Marketing &amp; Comms Consultant)</strong>
+                  <span class="date">2022 – Present</span>
+                </li>
+                <li>
+                  <strong>Upliance (Brand &amp; Marketing Coordinator)</strong>
+                  <span class="date">2021 – 2022</span>
+                </li>
+                <li>
+                  <strong>Revel Ad Agency (Creative Brand Designer)</strong>
+                  <span class="date">2021 – 2022</span>
+                </li>
+                <li>
+                  <strong>Freelance (UI/UX Designer)</strong>
+                  <span class="date">2020 – 2021</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Exact Toolkit Categories -->
+          <div class="toolkit-stack">
+
+            <div class="card toolkit-card">
+              <div class="toolkit-card-head">
+                <h3 class="toolkit-card-title">AI &amp; agent systems</h3>
+                <span class="toolkit-card-sub">Models · Runtimes · Coding Agents</span>
+              </div>
+              <p class="toolkit-raw-copy">ChatGPT, Hermes Agent, Claude Code</p>
+              <div class="pill-group">
+                <span class="skill-pill primary">ChatGPT</span>
+                <span class="skill-pill primary">Hermes Agent</span>
+                <span class="skill-pill primary">Claude Code</span>
+              </div>
+            </div>
+
+            <div class="card toolkit-card">
+              <div class="toolkit-card-head">
+                <h3 class="toolkit-card-title">Automation &amp; integrations</h3>
+                <span class="toolkit-card-sub">Workflows · Protocols · Data</span>
+              </div>
+              <p class="toolkit-raw-copy">n8n, MCP, REST APIs, webhooks, JSON</p>
+              <div class="pill-group">
+                <span class="skill-pill">n8n</span>
+                <span class="skill-pill">MCP</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">webhooks</span>
+                <span class="skill-pill">JSON</span>
+              </div>
+            </div>
+
+            <div class="card toolkit-card">
+              <div class="toolkit-card-head">
+                <h3 class="toolkit-card-title">Marketing operations &amp; analytics</h3>
+                <span class="toolkit-card-sub">CRM · Tracking · Search · Paid Media</span>
+              </div>
+              <p class="toolkit-raw-copy">HubSpot CRM, GA4, Google Tag Manager, Looker Studio, Semrush, Google Ads, Meta Ads</p>
+              <div class="pill-group">
+                <span class="skill-pill">HubSpot CRM</span>
+                <span class="skill-pill">GA4</span>
+                <span class="skill-pill">Google Tag Manager</span>
+                <span class="skill-pill">Looker Studio</span>
+                <span class="skill-pill">Semrush</span>
+                <span class="skill-pill">Google Ads</span>
+                <span class="skill-pill">Meta Ads</span>
+              </div>
+            </div>
+
+            <div class="card toolkit-card">
+              <div class="toolkit-card-head">
+                <h3 class="toolkit-card-title">Credentials</h3>
+                <span class="toolkit-card-sub" style="color: var(--blue-accent); font-weight: 600;">Certifications</span>
+              </div>
+              <p class="toolkit-raw-copy" style="margin-bottom: 0;">
+                Marketing Engineering — Profound University · SEMrush AI-Powered Marketer · Google Cloud Generative AI · Google Conversion Optimisation · Google Ads Creative · HubSpot Social Media Marketing I &amp; II
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: LET'S TALK ============ -->
+    <section id="contact" class="section" style="border-bottom: none;">
+      <div class="container">
+        <div class="contact-banner">
+          <div class="contact-banner-inner">
+            <span class="contact-eyebrow">05 · Contact</span>
+            <h2 class="contact-heading">Let's talk</h2>
+            <p class="contact-text">
+              I'm interested in opportunities across Marketing Engineering, Marketing Automation, and Marketing Operations, where business understanding and technical execution need to work together.
+            </p>
+
+            <div class="contact-actions">
+              <a href="mailto:assisdevassy@gmail.com" class="btn btn-light">
+                <span>Email Assis</span>
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/assis-devassy-853497240" target="_blank" rel="noopener noreferrer" class="btn btn-cobalt">
+                <span>Connect on LinkedIn</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <button type="button" id="copy-email-btn" class="btn btn-ghost-dark" title="Copy email address">
+                <span>assisdevassy@gmail.com</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="font-family: var(--font-heading); color: var(--blue-900);">ASSIS DEVASSY</strong>
+        <span> · Marketing Engineer · AI Marketing Automation · GTM Systems</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:assisdevassy@gmail.com">Email Assis</a>
+        <a href="https://www.linkedin.com/in/assis-devassy-853497240" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        <a href="https://github.com/dissi-00" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <button type="button" id="open-resume-footer-btn">1-Page CV</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ 1-PAGE ATS CV MODAL ============ -->
+  <div id="resume-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <h2 id="resume-modal-title">Assis Devassy — Marketing Engineer (1-Page CV)</h2>
+          <p>Kochi, India · assisdevassy@gmail.com · +91 91480 34405 · linkedin.com/in/assis-devassy-853497240</p>
+        </div>
+        <button type="button" id="close-resume-btn" class="modal-close" aria-label="Close CV Modal">✕ ESC</button>
+      </div>
+
+      <div class="modal-body">
+        <div>
+          <span class="eyebrow">Summary</span>
+          <p style="color: var(--blue-900);">
+            Marketing Engineer with 6+ years in marketing strategy, growth, operations and automation. I translate recurring marketing work into systems by decomposing workflows, separating deterministic work from judgment, and choosing the right mix of AI agent, code, API integration or hybrid automation. Built GenAI + n8n pipelines that cut creative production turnaround 50% and recovered ~60 hours/month. Current stack: Claude Code, ChatGPT, Hermes, MCP, APIs and agentic workflows, with human review preserved for consequential decisions.
+          </p>
+        </div>
+
+        <div>
+          <span class="eyebrow">Experience</span>
+
+          <div class="cv-role-box">
+            <div class="cv-role-head">
+              <h4>Marketing &amp; Communications Consultant · TNP Consultants</h4>
+              <span>Jul 2022 – Present · Kochi, India</span>
+            </div>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--blue-600);">Management consultancy group · 9 global subsidiaries</p>
+            <ul class="cv-bullets">
+              <li>Own multi-channel marketing operations across 9 subsidiaries, converting business priorities into repeatable workflows across content, brand, SEO, campaigns and communications.</li>
+              <li>Built GenAI + n8n automation pipelines that reduced creative production turnaround 50%, scaled output to 600+ brand assets and recovered ~60 working hours/month.</li>
+              <li>Increased organic sessions 47% and grew top-10 keyword rankings from 14 to 63 in 12 months through technical/on-page SEO and SEMrush-led optimization.</li>
+              <li>Work directly with Directors and Partners to prioritize work, align budgets, manage stakeholders and improve execution across markets.</li>
+            </ul>
+          </div>
+
+          <div class="cv-role-box">
+            <div class="cv-role-head">
+              <h4>Brand &amp; Marketing Coordinator · Upliance</h4>
+              <span>Aug 2021 – Jun 2022 · Bangalore, India</span>
+            </div>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--blue-600);">D2C smart kitchen appliances</p>
+            <ul class="cv-bullets">
+              <li>Built launch and content operations for 3 product launches; coordinated creative production, copy, photography and paid-social rollout.</li>
+              <li>Used performance data to reposition messaging around consumer segments, reducing customer acquisition cost 22%; grew social following 500% in 10 months.</li>
+            </ul>
+          </div>
+
+          <div class="cv-role-box">
+            <div class="cv-role-head">
+              <h4>Creative Brand Designer · Revel Ad Agency</h4>
+              <span>Jan 2021 – Jul 2022</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Used GA4 behavior data to redesign landing pages, increasing conversion 28%; ran 40+ A/B tests to validate digital journeys and reduce acquisition cost 19%.</li>
+            </ul>
+          </div>
+
+          <div class="cv-role-box" style="margin-bottom: 0;">
+            <div class="cv-role-head">
+              <h4>UI/UX Designer · Freelance</h4>
+              <span>Jan 2020 – Sep 2021 · Remote</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Delivered 8+ web/mobile products from research and prototyping through developer handoff; built content automation pipelines that reduced turnaround 30%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow">Education &amp; Certifications</span>
+          <p style="font-weight: 600; color: var(--blue-900);">
+            B.Sc. Design &amp; Animation, Jain University, Bangalore · Marketing Engineering Certification, Profound University
+          </p>
+          <p style="font-size: 0.82rem; margin-top: 4px;">
+            SEMrush AI-Powered Marketer · Google Cloud Generative AI · Google Conversion Optimisation · Google Ads Creative · HubSpot Social Media Marketing I &amp; II
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span>Open to Marketing Engineer, Marketing Operations, Marketing Automation &amp; GTM Engineer roles</span>
+        <div style="display: flex; gap: 10px;">
+          <a href="mailto:assisdevassy@gmail.com" class="btn btn-primary btn-sm">Email Assis</a>
+          <button type="button" id="close-resume-footer-btn" class="btn btn-secondary btn-sm">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ INTERACTIVE SCRIPTS ============ -->
+  <script src="main.js"></script>
+</body>
+</html>
