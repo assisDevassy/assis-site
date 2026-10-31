@@ -31,9 +31,17 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 20px 90px}
 .kick{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acid)}
 h1{font-size:clamp(30px,8vw,48px);line-height:1.06;letter-spacing:-.02em;font-weight:700;margin:14px 0 18px}
-.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center}
-.hero-photo{width:100%;max-width:320px;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
-@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-photo{width:100%;max-width:100%;height:auto;margin:0 auto 22px}}
+.hero-grid{display:none}
+.hero-photo{display:none}
+.avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid var(--line);object-position:50% 30%}
+.about-photo{float:right;width:240px;max-width:44vw;aspect-ratio:4/5;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin:0 0 16px 18px;object-position:50% 20%}
+@media(max-width:640px){
+  header.top{flex-direction:column-reverse;align-items:center;gap:10px}
+  .avatar{width:56px;height:56px}
+  nav.topnav{flex-wrap:wrap;justify-content:center;gap:14px;font-size:12px}
+  .brand{font-size:11.5px;text-align:center}
+  .about-photo{float:none;display:block;margin:0 auto 18px}
+}
 h2{font-size:clamp(20px,4.5vw,26px);letter-spacing:-.01em;font-weight:700}
 .sub{color:var(--mut);max-width:52ch}
 
@@ -107,6 +115,7 @@ footer a:hover{color:var(--acid)}
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
+  <img class="avatar" src="avatar.jpg" alt="Assis Devassy">
 </header>
 <style>
 @media(max-width:640px){
@@ -119,8 +128,6 @@ footer a:hover{color:var(--acid)}
 <main id="top">
 
 <section class="hero" style="padding-top:80px">
-  <div class="hero-grid">
-    <div>
       <span class="pill"><i></i>open to AI Marketer · Marketing Engineer · Automation · Operations roles</span>
       <h1>I look at manual marketing work<br>and build <em>the system.</em></h1>
       <p class="sub">Agents for judgment. Scripts for repetition. A human gate at every consequence.</p>
@@ -128,9 +135,7 @@ footer a:hover{color:var(--acid)}
         <a class="btn solid" href="#work">See the work ↓</a>
         <a class="btn" href="mailto:assisdevassy@gmail.com">assisdevassy@gmail.com</a>
       </div>
-    </div>
-    <img class="hero-photo" src="photo.jpg" alt="Assis Devassy">
-  </div>
+
 
   <div class="metrics">
     <div class="metric"><b>50%</b><span>faster creative turnaround<br>via n8n + GenAI</span></div>
@@ -212,6 +217,7 @@ footer a:hover{color:var(--acid)}
 
 <section id="about" class="about">
   <div class="shead"><span class="kick">03</span><h2>About</h2></div>
+  <img class="about-photo" src="about-photo.jpg" alt="Assis Devassy">
   <p>Six years across marketing strategy, content operations, SEO and analytics — currently the marketing and comms consultant for a consultancy with nine global subsidiaries.</p>
   <p><strong>I stopped asking which tool to buy and started asking why the work still takes three days.</strong> Now I build the versions that don't. Scripts for what repeats. Agents for what needs judgment. A human on every consequence.</p>
   <p>Off the clock: films, football, food experiments — some hits.</p>
