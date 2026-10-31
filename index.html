@@ -27,6 +27,9 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 20px 90px}
 .kick{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acid)}
 h1{font-size:clamp(30px,8vw,48px);line-height:1.06;letter-spacing:-.02em;font-weight:700;margin:14px 0 18px}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center}
+.hero-photo{width:min(260px,60vw);aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-photo{order:-1;width:min(180px,50vw);margin:0 auto}}
 h2{font-size:clamp(20px,4.5vw,26px);letter-spacing:-.01em;font-weight:700}
 .sub{color:var(--mut);max-width:52ch}
 
@@ -105,12 +108,17 @@ footer a:hover{color:var(--acid)}
 <main id="top">
 
 <section class="hero" style="padding-top:80px">
-  <span class="pill"><i></i>open to AI Marketer · Marketing Engineer · Automation · Operations roles</span>
-  <h1>I look at manual marketing work<br>and build <em>the system.</em></h1>
-  <p class="sub">Agents for judgment. Scripts for repetition. A human gate at every consequence.</p>
-  <div class="ctas">
-    <a class="btn solid" href="#work">See the work ↓</a>
-    <a class="btn" href="mailto:assisdevassy@gmail.com">assisdevassy@gmail.com</a>
+  <div class="hero-grid">
+    <div>
+      <span class="pill"><i></i>open to AI Marketer · Marketing Engineer · Automation · Operations roles</span>
+      <h1>I look at manual marketing work<br>and build <em>the system.</em></h1>
+      <p class="sub">Agents for judgment. Scripts for repetition. A human gate at every consequence.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#work">See the work ↓</a>
+        <a class="btn" href="mailto:assisdevassy@gmail.com">assisdevassy@gmail.com</a>
+      </div>
+    </div>
+    <img class="hero-photo" src="photo.jpg" alt="Assis Devassy">
   </div>
 
   <div class="metrics">
