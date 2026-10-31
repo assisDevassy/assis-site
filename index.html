@@ -33,7 +33,9 @@ a{color:inherit;text-decoration:none}
 h1{font-size:clamp(30px,8vw,48px);line-height:1.06;letter-spacing:-.02em;font-weight:700;margin:14px 0 18px}
 .hero-grid{display:none}
 .hero-photo{display:none}
-.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 30%;box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--acid)}
+.avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:50% 30%;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--acid);transition:transform .15s}
+.avatar:hover{transform:scale(1.04)}
+@media(max-width:640px){.avatar{width:76px;height:76px}}
 .about-photo{float:right;width:240px;max-width:44vw;aspect-ratio:4/5;object-fit:cover;border-radius:50%;object-position:50% 20%;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--acid);margin:0 6px 16px 18px}
 @media(max-width:640px){
   header.top{flex-direction:column-reverse;align-items:center;gap:10px}
@@ -108,14 +110,16 @@ footer a:hover{color:var(--acid)}
 <div class="wrap">
 
 <header class="top">
-  <a class="brand" href="#top"><b>assis devassy</b> <span>· marketing specialist</span></a>
-  <nav class="topnav" aria-label="Primary">
-    <a href="#work">Work</a>
-    <a href="#creed">Creed</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <img class="avatar" src="avatar.jpg" alt="Assis Devassy">
+  <img class="avatar" src="avatar.jpg" id="avatarBtn" alt="Assis Devassy" title="View photo" style="cursor:pointer">
+  <div class="who">
+    <a class="brand" href="#top"><b>assis devassy</b> <span>· marketing specialist</span></a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#creed">Creed</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 <style>
 @media(max-width:640px){
@@ -253,3 +257,38 @@ footer a:hover{color:var(--acid)}
 </div>
 </body>
 </html>
+
+<style>
+/* instagram-profile header */
+header.top{display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:start;padding:26px 0 0}
+.avatar{grid-row:1/3;margin-top:-2px}
+header.top > .who, header.top > nav.topnav{grid-column:2}
+header.top{grid-template-rows:auto auto;row-gap:12px;align-items:start}
+header.top > .who{grid-row:1;display:flex;flex-direction:column;gap:10px;min-width:0}
+header.top > nav.topnav{grid-row:2;display:flex;gap:18px;flex-wrap:wrap}
+@media(max-width:640px){
+  header.top{column-gap:14px;padding-top:18px}
+  .avatar{width:92px;height:92px}
+  nav.topnav{gap:14px;font-size:12.5px;justify-content:flex-start}
+  .brand{font-size:12px}
+  .brand span{display:block;margin-top:2px}
+}
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(8,8,10,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:84vh;border-radius:18px;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--acid)}
+.lightbox .close{position:fixed;top:18px;right:22px;background:var(--bg2);border:1px solid var(--line);color:var(--mut);width:38px;height:38px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:.65;transition:opacity .15s,color .15s}
+.lightbox .close:hover{opacity:1;color:var(--acid)}
+</style>
+<div class="lightbox" id="lightbox">
+  <button class="close" aria-label="Close">✕</button>
+  <img src="about-photo.jpg" alt="Assis Devassy — full photo">
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox');
+  document.getElementById('avatarBtn').addEventListener('click',function(){lb.classList.add('open')});
+  lb.addEventListener('click',function(e){ if(e.target===lb||e.target.className==='close') lb.classList.remove('open'); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('open'); });
+})();
+</script>
