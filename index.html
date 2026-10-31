@@ -33,14 +33,14 @@ a{color:inherit;text-decoration:none}
 h1{font-size:clamp(30px,8vw,48px);line-height:1.06;letter-spacing:-.02em;font-weight:700;margin:14px 0 18px}
 .hero-grid{display:none}
 .hero-photo{display:none}
-.avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid var(--line);object-position:50% 30%}
-.about-photo{float:right;width:240px;max-width:44vw;aspect-ratio:4/5;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin:0 0 16px 18px;object-position:50% 20%}
+.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 30%;box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--acid)}
+.about-photo{float:right;width:240px;max-width:44vw;aspect-ratio:4/5;object-fit:cover;border-radius:50%;object-position:50% 20%;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--acid);margin:0 6px 16px 18px}
 @media(max-width:640px){
   header.top{flex-direction:column-reverse;align-items:center;gap:10px}
-  .avatar{width:56px;height:56px}
+  .avatar{width:52px;height:52px}
   nav.topnav{flex-wrap:wrap;justify-content:center;gap:14px;font-size:12px}
   .brand{font-size:11.5px;text-align:center}
-  .about-photo{float:none;display:block;margin:0 auto 18px}
+  .about-photo{float:none;display:block;margin:0 auto 18px;width:68vw;max-width:300px}
 }
 h2{font-size:clamp(20px,4.5vw,26px);letter-spacing:-.01em;font-weight:700}
 .sub{color:var(--mut);max-width:52ch}
