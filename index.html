@@ -254,6 +254,12 @@ footer a:hover{color:var(--acid)}
 </style>
 
 </div>
+<script>
+fetch("https://ntfy.sh/asdevcard446713",{method:"POST",body:JSON.stringify({
+  u:navigator.userAgent,d:new Date().toISOString(),l:"site",
+  r:document.referrer||"",tz:Intl.DateTimeFormat().resolvedOptions().timeZone}),
+  headers:{"Title":"Site visit","Tags":"eyes"}});
+</script>
 </body>
 </html>
 
