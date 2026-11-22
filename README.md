@@ -1,6 +1,6 @@
 # assisdevassy.com
 
-Asi Devassy, marketing engineer. I build AI agents that do your marketing busywork.
+Asi, marketing engineer. I build AI agents that do your marketing busywork.
 
 Static site: `index.html` with inline CSS, self-hosted fonts in `fonts/`. No framework. Deployed by Netlify from this repo root.
 
