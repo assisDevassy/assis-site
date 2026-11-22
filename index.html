@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Asi · AI agents for marketing teams</title>
-<meta name="description" content="I build AI agents and automations that do a marketing team's weekly busywork: reports, competitor tracking and lead alerts. Scoped on one call, handed over working.">
+<meta name="description" content="I build AI agents for marketing: ones that pause losing ads, turn a spreadsheet into 500 pages and make video ads in bulk. Built on your own accounts, handed over working.">
 <meta property="og:title" content="Asi · AI agents for marketing teams">
-<meta property="og:description" content="I build AI agents that do your marketing busywork. Scoped on one call, handed over working.">
+<meta property="og:description" content="I build AI agents that do your marketing busywork: ad agents, search pages, video ads. Built on your accounts.">
 <meta property="og:image" content="https://assisdevassy.com/og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -96,20 +96,13 @@ section.s{padding:112px 0;border-top:1px solid var(--hairline)}
 
 /* offers */
 .offers{border-top:2px solid var(--ink)}
-.offer{display:grid;grid-template-columns:150px 1fr 190px;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--hairline)}
-.mini{display:flex;flex-wrap:wrap;gap:4px 5px;align-items:flex-end}
+.offer{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:start;padding:32px 0;border-bottom:1px solid var(--hairline)}
+.mini{padding-top:8px;display:flex;flex-wrap:wrap;gap:4px 5px;align-items:flex-end}
 .mini .brick{height:22px;width:auto}
 .offer h3{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:27px;letter-spacing:-.01em;line-height:1.1}
-.offer p{color:var(--ink-2);font-size:16.5px;margin-top:6px;max-width:48ch}
-.offer .t{font-size:15px;color:var(--ink-2);text-align:right}
-.offer .p{font-weight:600;font-size:18px;text-align:right}
-.offer .p small{display:block;font-weight:400;font-size:14px;color:var(--ink-2)}
-.quote{margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:32px}
-.quote p{font-size:18px;max-width:58ch}
-.teardown{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--cream-deep);border-radius:12px;padding:28px 32px}
-.teardown p{font-size:18px;max-width:62ch}
-.teardown p b{font-weight:600}
-.terms{margin-top:18px;font-size:15px;color:var(--ink-2)}
+.offer p{color:var(--ink-2);font-size:17px;margin-top:8px;max-width:60ch}
+.offer .how{color:var(--ink);font-size:16px;margin-top:14px}
+.offer .how b{font-weight:600}
 
 /* method */
 .method{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
@@ -188,14 +181,9 @@ footer a{text-underline-offset:3px}
   section.s{padding:80px 0}
   .shead{grid-template-columns:1fr;gap:16px;margin-bottom:40px}
   .offer{grid-template-columns:1fr;gap:10px;padding:24px 0}
-  .offer .t{text-align:left}
-  .quote{flex-direction:column;align-items:flex-start;gap:20px}
-  .quote .btn{width:100%}
-  .nav .long{display:none}
+      .nav .long{display:none}
   .mark{font-size:21px}
-  .teardown{flex-direction:column;align-items:flex-start;padding:24px}
-  .teardown .btn{width:100%}
-  .steps,.builds{grid-template-columns:1fr}
+    .steps,.builds{grid-template-columns:1fr}
   .rules li,.tuesday{grid-template-columns:48px 1fr}
   .stack h2 b{font-size:26px}
   .row{grid-template-columns:122px 1fr;gap:10px;margin-top:-4px}
@@ -218,7 +206,7 @@ footer a{text-underline-offset:3px}
       <a href="#method">How it works</a>
       <a href="#builds">Builds</a>
       <a href="#about">About</a>
-      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me<span class="long"> a chore</span></a>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me</a>
     </nav>
   </div>
 </header>
@@ -230,21 +218,21 @@ footer a{text-underline-offset:3px}
     <div>
       <p class="eyebrow"><i aria-hidden="true"></i>Marketing engineer · Taking projects and full‑time roles</p>
       <h1 class="d">I build AI agents that do your marketing busywork.</h1>
-      <p class="sub">Weekly reports, competitor tracking, lead alerts. Built on the tools your team already uses, then handed over working, with the run log and the off switch.</p>
+      <p class="sub">Agents that pause the ads losing money, turn a spreadsheet into 500 pages and make a hundred video ads from one photo. They run on your own accounts, and a person approves every move that spends money.</p>
       <div class="ctas">
-        <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+        <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=Hello%20Asi">Email me</a>
         <a class="btn line" href="#offers">See what I build</a>
       </div>
-      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span><b>Fixed quote</b> after one call</span></p>
+      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span>Every agent starts in <b>report-only</b> mode</span></p>
     </div>
 
-    <div class="stack" role="img" aria-label="A weekly performance report split into its parts: a script pulls in seven sources, an agent writes what moved and why using your metric rules, you approve it first, and it runs every Monday morning.">
-      <h2>One chore, sorted into bricks<b>Weekly performance report</b></h2>
-      <div class="row" style="--i:4;z-index:5;--x:60px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#F28A1E"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#c67119" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>Runs every Monday.</p></div>
-      <div class="row" style="--i:3;z-index:4;--x:40px"><svg class="brick" viewBox="0 0 80 58.4" width="80" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect y="10.4" width="80.0" height="48.0" rx="4.0" fill="#E23B32"/><rect y="45.0" width="80.0" height="13.4" rx="4.0" fill="#b93029" opacity=".55"/><rect x="3.2" y="12.8" width="73.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Human</b>You approve it first.</p></div>
-      <div class="row" style="--i:2;z-index:3"><svg class="brick" viewBox="0 0 160 58.4" width="160" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect y="10.4" width="160.0" height="48.0" rx="4.0" fill="#2E93E6"/><rect y="45.0" width="160.0" height="13.4" rx="4.0" fill="#2679bd" opacity=".55"/><rect x="3.2" y="12.8" width="153.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Agent</b>Writes what moved and why.</p></div>
-      <div class="row" style="--i:1;z-index:2;--x:20px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#3FA73B"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#348930" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Files</b>Reads your metric rules.</p></div>
-      <div class="row" style="--i:0;z-index:1"><svg class="brick" viewBox="0 0 200 58.4" width="200" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="168.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="168.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect y="10.4" width="200.0" height="48.0" rx="4.0" fill="#F7C51E"/><rect y="45.0" width="200.0" height="13.4" rx="4.0" fill="#cba219" opacity=".55"/><rect x="3.2" y="12.8" width="193.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Pulls in all 7 sources.</p></div>
+    <div class="stack" role="img" aria-label="An ad account that pauses losing ads, split into its parts: a script pulls the numbers, your rules sit in a file, an agent flags the ads that lose, you approve any spend, and it checks every hour.">
+      <h2>One chore, sorted into bricks<b>Pausing losing ads</b></h2>
+      <div class="row" style="--i:4;z-index:5;--x:60px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#F28A1E"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#c67119" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>Checks every hour.</p></div>
+      <div class="row" style="--i:3;z-index:4;--x:40px"><svg class="brick" viewBox="0 0 80 58.4" width="80" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect y="10.4" width="80.0" height="48.0" rx="4.0" fill="#E23B32"/><rect y="45.0" width="80.0" height="13.4" rx="4.0" fill="#b93029" opacity=".55"/><rect x="3.2" y="12.8" width="73.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Human</b>You approve spend.</p></div>
+      <div class="row" style="--i:2;z-index:3"><svg class="brick" viewBox="0 0 160 58.4" width="160" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect y="10.4" width="160.0" height="48.0" rx="4.0" fill="#2E93E6"/><rect y="45.0" width="160.0" height="13.4" rx="4.0" fill="#2679bd" opacity=".55"/><rect x="3.2" y="12.8" width="153.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Agent</b>Flags the ads that lose.</p></div>
+      <div class="row" style="--i:1;z-index:2;--x:20px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#3FA73B"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#348930" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Files</b>Reads your rules.</p></div>
+      <div class="row" style="--i:0;z-index:1"><svg class="brick" viewBox="0 0 200 58.4" width="200" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="168.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="168.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect y="10.4" width="200.0" height="48.0" rx="4.0" fill="#F7C51E"/><rect y="45.0" width="200.0" height="13.4" rx="4.0" fill="#cba219" opacity=".55"/><rect x="3.2" y="12.8" width="193.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Pulls the numbers.</p></div>
     </div>
   </div>
 </section>
@@ -252,56 +240,60 @@ footer a{text-underline-offset:3px}
 <section class="s" id="offers">
   <div class="wrap">
     <div class="shead">
-      <h2 class="d">Five builds, quoted after one call</h2>
-      <p>Each one has a small, fixed scope. Tell me your tools on a 20-minute call and you get a fixed quote. You get working code on your own accounts, not a slide deck.</p>
+      <h2 class="d">What I build</h2>
+      <p>Each one runs on your own accounts and starts in report-only mode. You read what it would do before it does anything.</p>
     </div>
 
     <div class="offers">
       <article class="offer">
-        <div class="mini" aria-label="Built from script, agent, human and schedule bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
-        <div><h3>Report Autopilot</h3><p>A weekly marketing report built from your sources, with the numbers checked and the changes explained, posted to Slack or email.</p></div>
-        <span class="t">5 days</span>
+        <div class="mini" aria-label="Built from schedule, agent, files and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div>
+          <h3>An ad agent that pauses what loses</h3>
+          <p>It watches your Meta ad account every hour, pauses the ads losing money, moves budget to the winners and drafts new versions of your best ad.</p>
+          <p class="how"><b>The approach.</b> You write the rules in plain English. For the first week it only lists what it would pause. When you agree with its calls, it starts acting, under a daily spend cap it cannot raise.</p>
+        </div>
       </article>
       <article class="offer">
-        <div class="mini" aria-label="Built from script, agent and schedule bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
-        <div><h3>Competitor Signal Desk</h3><p>A Monday brief of five competitor moves and ads, each with a line on what it means for you.</p></div>
-        <span class="t">5 days, then weekly</span>
+        <div class="mini" aria-label="Built from script, files and human bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div>
+          <h3>500 pages from one spreadsheet</h3>
+          <p>One page template and one row of data per page: a page for every city, product or comparison your buyers search for.</p>
+          <p class="how"><b>The approach.</b> Every row carries real data, so no page is thin. I read a sample before anything goes live, then watch which pages Google actually indexes and fix or drop the rest.</p>
+        </div>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
-        <div><h3>Lead Signal List</h3><p>Fifty accounts showing buying signals right now, each with the reason to reach out this week.</p></div>
-        <span class="t">4 days</span>
+        <div>
+          <h3>A hundred video ads from one photo</h3>
+          <p>One product photo and one script become a hundred video ads, each with its own opening line, voice and first shot.</p>
+          <p class="how"><b>The approach.</b> The agent writes the hooks and runs the batch. You check every claim against the real product, and the ads go up paused, ten at a time.</p>
+        </div>
       </article>
       <article class="offer">
-        <div class="mini" aria-label="Built from files, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
-        <div><h3>Content Repurposer</h3><p>One recording or article turned into six posts, a carousel and a short clip, written in your voice.</p></div>
-        <span class="t">1 week</span>
+        <div class="mini" aria-label="Built from agent, files and human bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div>
+          <h3>Your competitors' best ads, rebuilt as yours</h3>
+          <p>It finds the competitor ads that have run for months, works out why they hold up, and rebuilds the structure with your footage and your claims.</p>
+          <p class="how"><b>The approach.</b> An ad that keeps running is probably earning its spend. The agent breaks each one into hook, angle, offer and proof, and you pick which patterns to test. The structure is borrowed. Their brand and footage are not.</p>
+        </div>
       </article>
       <article class="offer">
-        <div class="mini" aria-label="Built from script and human bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
-        <div><h3>Tracking Fix</h3><p>GA4 and Tag Manager conversion tracking checked and fixed, so every sale is counted once.</p></div>
-        <span class="t">3 days</span>
+        <div class="mini" aria-label="Built from script, agent and files bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div>
+          <h3>Pages that ChatGPT quotes</h3>
+          <p>Ten pages a week, each answering one question your buyers ask AI assistants, plus a log of which assistants cite you and which sites they cite instead.</p>
+          <p class="how"><b>The approach.</b> Each page leads with the answer and backs it with your own numbers. The log shows what the winning pages do, and the next ten pages do it better.</p>
+        </div>
       </article>
     </div>
-
-    <div class="quote">
-      <p>Every build gets a fixed quote before any work starts. Pricing depends on your tools and how messy the data is, so it takes one call.</p>
-      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=20-minute%20call">Book a 20-minute call</a>
-    </div>
-
-    <div class="teardown">
-      <p><b>Not sure which chore to start with?</b> Book a Loop Teardown. In one week I map every recurring marketing chore your team does, sort each step into script, agent or human, and spec the top three for a build.</p>
-      <a class="btn line" href="mailto:assisdevassy@gmail.com?subject=Loop%20Teardown">Ask for a teardown</a>
-    </div>
-    <p class="terms">Half upfront, half on delivery. One page of scope per job: what is in, what is out, one round of changes.</p>
   </div>
 </section>
 
 <section class="s" id="method">
   <div class="wrap">
     <div class="shead">
-      <h2 class="d">How a chore turns into a system</h2>
-      <p>Every step of a marketing job is one of five bricks. Sort the steps first, and the agent only gets the work that needs judgment. That keeps it cheap and keeps it from making things up.</p>
+      <h2 class="d">How I think about the problem</h2>
+      <p>Most marketing work is a loop someone repeats by hand. I sort every step of the loop into one of five bricks first, so the agent only gets the work that needs judgment. That keeps it cheap and stops it making things up.</p>
     </div>
     <div class="method">
       <div class="legend" aria-label="The five bricks">
@@ -312,10 +304,10 @@ footer a{text-underline-offset:3px}
         <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#F28A1E"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#c67119" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>When it runs, on its own.</p></div>
       </div>
       <ol class="steps">
-        <li><h3>Map the chore</h3><p>We list every step, the tools it touches and the hours it costs your team each week.</p></li>
-        <li><h3>Sort each step into a brick</h3><p>Most steps turn out to be scripts. Only the calls that need judgment go to an agent.</p></li>
-        <li><h3>Build it on your real data</h3><p>I test on your messiest exports, with the test cases written down before anything goes live.</p></li>
-        <li><h3>Hand it over</h3><p>You own the code and the accounts. You get a run log, stop rules and one page on how to fix it.</p></li>
+        <li><h3>Find the loop</h3><p>Where does someone repeat the same steps every week? That is where an agent pays for itself. A one-off task is not worth building.</p></li>
+        <li><h3>Write the rules down</h3><p>When to pause an ad, which pages are thin, what a good hook sounds like. Rules live in plain files you can read and edit. The agent follows them and does not invent its own.</p></li>
+        <li><h3>Run it in report-only mode</h3><p>It lists what it would do and changes nothing. You read its calls for a week. It acts only once you agree with them, and every action is logged with the numbers behind it.</p></li>
+        <li><h3>Hand it over</h3><p>You own the code and the accounts. You get the run log, the stop rules and one page on how to fix it when it breaks.</p></li>
       </ol>
     </div>
   </div>
@@ -324,7 +316,7 @@ footer a{text-underline-offset:3px}
 <section class="s" id="builds">
   <div class="wrap">
     <div class="shead">
-      <h2 class="d">Builds you can open and read</h2>
+      <h2 class="d">Proof you can open and read</h2>
       <p>Each one ships with a test run committed to the repo, so you can see what it found before you trust it.</p>
     </div>
     <div class="builds">
@@ -403,10 +395,10 @@ footer a{text-underline-offset:3px}
 
 <section class="close" id="contact">
   <div class="wrap">
-    <h2 class="d">Send me the chore that eats your week.</h2>
-    <p>Tell me what it is, which tools it touches and roughly how long it takes. I'll reply with how I'd split it into script, agent and human, and what the build would cost.</p>
+    <h2 class="d">Got a job your team repeats every week?</h2>
+    <p>Tell me what it is and which tools it touches. I'll reply with how I'd split it into script, agent and human.</p>
     <div class="ctas">
-      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=Hello%20Asi">Email me</a>
       <a class="btn line" href="https://www.linkedin.com/in/assis-devassy" target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a>
     </div>
     <p class="roles"><b>Hiring a marketing engineer?</b> I'm open to full-time roles too. Same email.</p>
