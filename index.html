@@ -122,10 +122,10 @@ section.s{padding:112px 0;border-top:1px solid var(--hairline)}
 .build{padding:30px 0;border-top:1px solid var(--hairline);display:flex;flex-direction:column}
 .build h3{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:27px;letter-spacing:-.01em;line-height:1.1}
 .build p{color:var(--ink-2);font-size:16.5px;margin-top:10px;max-width:50ch}
-.build .proof{margin-top:14px;font-size:15px;color:var(--ink)}
-.build .proof b{font-weight:600}
-.build .go{margin-top:16px;font-weight:600;font-size:15.5px;text-decoration:none;display:inline-flex;align-self:flex-start;background:linear-gradient(var(--ink),var(--ink)) 0 100%/100% 2px no-repeat;padding:4px 0}
-.build .go:hover{background-size:0 2px}
+.build .proof,.offer .proof{margin-top:14px;font-size:15px;color:var(--ink)}
+.build .proof b,.offer .proof b{font-weight:600}
+.build .go,.offer .go{margin-top:16px;font-weight:600;font-size:15.5px;text-decoration:none;display:inline-flex;align-self:flex-start;background:linear-gradient(var(--ink),var(--ink)) 0 100%/100% 2px no-repeat;padding:4px 0}
+.build .go:hover,.offer .go:hover{background-size:0 2px}
 .build .tag{margin-top:16px;font-size:15px;color:var(--ink-2)}
 
 /* rules */
@@ -223,7 +223,7 @@ footer a{text-underline-offset:3px}
         <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=Hello%20Asi">Email me</a>
         <a class="btn line" href="#offers">See what I build</a>
       </div>
-      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span>Every agent starts in <b>report-only</b> mode</span></p>
+      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Nine</b> open-source builds on GitHub</span><span>Every agent starts in <b>report-only</b> mode</span></p>
     </div>
 
     <div class="stack" role="img" aria-label="An ad account that pauses losing ads, split into its parts: a script pulls the numbers, your rules sit in a file, an agent flags the ads that lose, you approve any spend, and it checks every hour.">
@@ -250,7 +250,9 @@ footer a{text-underline-offset:3px}
         <div>
           <h3>An ad agent that pauses what loses</h3>
           <p>It watches your Meta ad account every hour, pauses the ads losing money, moves budget to the winners and drafts new versions of your best ad.</p>
-          <p class="how"><b>The approach.</b> You write the rules in plain English. For the first week it only lists what it would pause. When you agree with its calls, it starts acting, under a daily spend cap it cannot raise.</p>
+          <p class="how"><b>The approach.</b> You write the rules down in one file. For the first week it only lists what it would pause. When you agree with its calls, it starts acting, under a daily spend cap it cannot raise.</p>
+          <p class="proof"><b>Test run:</b> a 14-day export of six made-up ads, every rule firing once, 10 tests passing. It only reports. It never touches an account.</p>
+          <a class="go" href="https://github.com/assisDevassy/ad-pause-agent" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
       <article class="offer">
@@ -258,15 +260,19 @@ footer a{text-underline-offset:3px}
         <div>
           <h3>500 pages from one spreadsheet</h3>
           <p>One page template and one row of data per page: a page for every city, product or comparison your buyers search for.</p>
-          <p class="how"><b>The approach.</b> Every row carries real data, so no page is thin. I read a sample before anything goes live, then watch which pages Google actually indexes and fix or drop the rest.</p>
+          <p class="how"><b>The approach.</b> A row only becomes a page if it has real demand and enough real data, and thin rows are skipped with the reason. I read a sample before anything goes live, then watch which pages Google actually indexes and fix or drop the rest.</p>
+          <p class="proof"><b>Test run:</b> 30 real keyword rows became 21 pages. 5 mirror searches merged, 4 thin rows skipped with the reason.</p>
+          <a class="go" href="https://github.com/assisDevassy/sheet-to-pages" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div>
           <h3>A hundred video ads from one photo</h3>
-          <p>One product photo and one script become a hundred video ads, each with its own opening line, voice and first shot.</p>
-          <p class="how"><b>The approach.</b> The agent writes the hooks and runs the batch. You check every claim against the real product, and the ads go up paused, ten at a time.</p>
+          <p>One product photo and one script become a plan for a hundred video ads, each with its own opening line, voice and first shot.</p>
+          <p class="how"><b>The approach.</b> A claim guard checks every hook against what the product really does, then I check it again by hand. The ads go up paused, ten at a time.</p>
+          <p class="proof"><b>Test run:</b> one product, 20 hooks through the claim guard, 100 ads planned in 10 batches. The repo plans the batch. It does not render video.</p>
+          <a class="go" href="https://github.com/assisDevassy/hook-batch" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
       <article class="offer">
@@ -274,15 +280,19 @@ footer a{text-underline-offset:3px}
         <div>
           <h3>Your competitors' best ads, rebuilt as yours</h3>
           <p>It finds the competitor ads that have run for months, works out why they hold up, and rebuilds the structure with your footage and your claims.</p>
-          <p class="how"><b>The approach.</b> An ad that keeps running is probably earning its spend. The agent breaks each one into hook, angle, offer and proof, and you pick which patterns to test. The structure is borrowed. Their brand and footage are not.</p>
+          <p class="how"><b>The approach.</b> An ad that keeps running is probably earning its spend. Each one is broken into hook, angle, offer and proof, and you pick which patterns to test. The structure is borrowed. Their brand and footage are not.</p>
+          <p class="proof"><b>Test run:</b> 25 live Meta Ad Library ads, 20 of them running 60+ days, ranked into patterns with a brief for the top three.</p>
+          <a class="go" href="https://github.com/assisDevassy/winning-ads" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script, agent and files bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div>
           <h3>Pages that ChatGPT quotes</h3>
-          <p>Ten pages a week, each answering one question your buyers ask AI assistants, plus a log of which assistants cite you and which sites they cite instead.</p>
-          <p class="how"><b>The approach.</b> Each page leads with the answer and backs it with your own numbers. The log shows what the winning pages do, and the next ten pages do it better.</p>
+          <p>A log of which buyer questions ChatGPT answers with your pages, and which pages it cites instead, so each week of writing goes where the gaps are.</p>
+          <p class="how"><b>The approach.</b> Each page leads with the answer and backs it with your own numbers. The log shows what the winning pages do, and the next page you write does it better.</p>
+          <p class="proof"><b>Test run:</b> five live ChatGPT answers. The tracked domain was cited in 3 and absent from 2, with the pages cited instead.</p>
+          <a class="go" href="https://github.com/assisDevassy/citation-log" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
     </div>
