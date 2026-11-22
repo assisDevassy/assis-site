@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Asi Devassy · AI agents for marketing teams</title>
-<meta name="description" content="I build AI agents and automations that do a marketing team's weekly busywork: reports, competitor tracking and lead alerts. Fixed-price builds from $400.">
+<meta name="description" content="I build AI agents and automations that do a marketing team's weekly busywork: reports, competitor tracking and lead alerts. Scoped on one call, handed over working.">
 <meta property="og:title" content="Asi Devassy · AI agents for marketing teams">
-<meta property="og:description" content="I build AI agents that do your marketing busywork. Fixed-price builds from $400, handed over working.">
+<meta property="og:description" content="I build AI agents that do your marketing busywork. Scoped on one call, handed over working.">
 <meta property="og:image" content="https://assisdevassy.com/og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -35,6 +35,9 @@ body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:
 ::selection{background:var(--y);color:var(--ink)}
 a{color:inherit}
 img,svg{display:block}
+h1,h2,h3{text-wrap:balance}
+p,li{text-wrap:pretty}
+.mark{white-space:nowrap}
 .wrap{max-width:1200px;margin:0 auto;padding:0 var(--edge)}
 .d{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"WONK" 0,"opsz" 144;letter-spacing:-.012em;line-height:1.02}
 .skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--cream);padding:10px 14px;border-radius:6px;z-index:50}
@@ -93,15 +96,17 @@ section.s{padding:112px 0;border-top:1px solid var(--hairline)}
 
 /* offers */
 .offers{border-top:2px solid var(--ink)}
-.offer{display:grid;grid-template-columns:150px 1fr 170px 210px;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--hairline)}
+.offer{display:grid;grid-template-columns:150px 1fr 190px;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--hairline)}
 .mini{display:flex;flex-wrap:wrap;gap:4px 5px;align-items:flex-end}
 .mini .brick{height:22px;width:auto}
 .offer h3{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:27px;letter-spacing:-.01em;line-height:1.1}
 .offer p{color:var(--ink-2);font-size:16.5px;margin-top:6px;max-width:48ch}
-.offer .t{font-size:15px;color:var(--ink-2)}
+.offer .t{font-size:15px;color:var(--ink-2);text-align:right}
 .offer .p{font-weight:600;font-size:18px;text-align:right}
 .offer .p small{display:block;font-weight:400;font-size:14px;color:var(--ink-2)}
-.teardown{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--cream-deep);border-radius:12px;padding:28px 32px}
+.quote{margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.quote p{font-size:18px;max-width:58ch}
+.teardown{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--cream-deep);border-radius:12px;padding:28px 32px}
 .teardown p{font-size:18px;max-width:62ch}
 .teardown p b{font-weight:600}
 .terms{margin-top:18px;font-size:15px;color:var(--ink-2)}
@@ -169,9 +174,7 @@ footer a{text-underline-offset:3px}
   .hero .wrap{grid-template-columns:1fr;gap:64px}
   .stack{justify-self:start}
   .close h2,.close p{max-width:none}
-  .offer{grid-template-columns:120px 1fr 190px;}
-  .offer .t{grid-column:2;margin-top:-16px}
-  .offer .p{grid-row:1;grid-column:3}
+  .offer{grid-template-columns:120px 1fr 150px}
   .method,.about{grid-template-columns:1fr;gap:56px}
   .about img{max-width:420px}
   .wall{opacity:.35}
@@ -185,14 +188,19 @@ footer a{text-underline-offset:3px}
   section.s{padding:80px 0}
   .shead{grid-template-columns:1fr;gap:16px;margin-bottom:40px}
   .offer{grid-template-columns:1fr;gap:10px;padding:24px 0}
-  .offer .t,.offer .p{grid-column:auto;grid-row:auto;margin:0;text-align:left}
+  .offer .t{text-align:left}
+  .quote{flex-direction:column;align-items:flex-start;gap:20px}
+  .quote .btn{width:100%}
+  .nav .long{display:none}
+  .mark{font-size:21px}
   .teardown{flex-direction:column;align-items:flex-start;padding:24px}
   .teardown .btn{width:100%}
   .steps,.builds{grid-template-columns:1fr}
   .rules li,.tuesday{grid-template-columns:48px 1fr}
-  .row{grid-template-columns:124px 1fr;gap:12px;margin-top:-5px}
-  .row .brick{height:40px;margin-left:calc(var(--x,0) / 2)}
-  .row p{font-size:13px;line-height:1.25;padding-top:8px}
+  .stack h2 b{font-size:26px}
+  .row{grid-template-columns:122px 1fr;gap:10px;margin-top:-4px}
+  .row .brick{height:34px;margin-left:calc(var(--x,0) / 3)}
+  .row p{font-size:13.5px;line-height:1.12;padding-top:6px;white-space:nowrap}
   .row p b{display:block;margin:0}
   .wall{display:none}
   .close{padding:88px 0}
@@ -206,11 +214,11 @@ footer a{text-underline-offset:3px}
   <div class="wrap">
     <a class="mark d" href="#top" aria-label="Asi Devassy, back to top"><svg class="brick" viewBox="0 0 60 43.8" width="60" height="43.8" aria-hidden="true" focusable="false"><rect x="6.0" y="0" width="18.0" height="10.8" rx="2.1" fill="#E23B32"/><rect x="6.0" y="0" width="18.0" height="2.4" rx="1.2" fill="#eb7670" opacity=".7"/><rect x="36.0" y="0" width="18.0" height="10.8" rx="2.1" fill="#E23B32"/><rect x="36.0" y="0" width="18.0" height="2.4" rx="1.2" fill="#eb7670" opacity=".7"/><rect y="7.8" width="60.0" height="36.0" rx="3.0" fill="#E23B32"/><rect y="33.7" width="60.0" height="10.1" rx="3.0" fill="#b93029" opacity=".55"/><rect x="2.4" y="9.6" width="55.2" height="2.1" rx="1.1" fill="#fff" opacity=".28"/></svg>Asi Devassy</a>
     <nav class="links" aria-label="Primary">
-      <a href="#offers">Prices</a>
+      <a href="#offers">Services</a>
       <a href="#method">How it works</a>
       <a href="#builds">Builds</a>
       <a href="#about">About</a>
-      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me<span class="long"> a chore</span></a>
     </nav>
   </div>
 </header>
@@ -225,18 +233,18 @@ footer a{text-underline-offset:3px}
       <p class="sub">Weekly reports, competitor tracking, lead alerts. Built on the tools your team already uses, then handed over working, with the run log and the off switch.</p>
       <div class="ctas">
         <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
-        <a class="btn line" href="#offers">See the fixed prices</a>
+        <a class="btn line" href="#offers">See what I build</a>
       </div>
-      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span>Builds from <b>$400</b></span></p>
+      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span><b>Fixed quote</b> after one call</span></p>
     </div>
 
-    <div class="stack" role="img" aria-label="A weekly performance report split into its parts: a script pulls seven sources, an agent writes what moved and why, it reads your metric rules and past reports, you approve it, and it runs every Monday morning.">
+    <div class="stack" role="img" aria-label="A weekly performance report split into its parts: a script pulls in seven sources, an agent writes what moved and why using your metric rules, you approve it first, and it runs every Monday morning.">
       <h2>One chore, sorted into bricks<b>Weekly performance report</b></h2>
       <div class="row" style="--i:4;z-index:5;--x:60px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#F28A1E"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#c67119" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>Runs every Monday.</p></div>
-      <div class="row" style="--i:3;z-index:4;--x:40px"><svg class="brick" viewBox="0 0 80 58.4" width="80" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect y="10.4" width="80.0" height="48.0" rx="4.0" fill="#E23B32"/><rect y="45.0" width="80.0" height="13.4" rx="4.0" fill="#b93029" opacity=".55"/><rect x="3.2" y="12.8" width="73.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Human</b>You approve it before it ships.</p></div>
+      <div class="row" style="--i:3;z-index:4;--x:40px"><svg class="brick" viewBox="0 0 80 58.4" width="80" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect y="10.4" width="80.0" height="48.0" rx="4.0" fill="#E23B32"/><rect y="45.0" width="80.0" height="13.4" rx="4.0" fill="#b93029" opacity=".55"/><rect x="3.2" y="12.8" width="73.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Human</b>You approve it first.</p></div>
       <div class="row" style="--i:2;z-index:3"><svg class="brick" viewBox="0 0 160 58.4" width="160" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect y="10.4" width="160.0" height="48.0" rx="4.0" fill="#2E93E6"/><rect y="45.0" width="160.0" height="13.4" rx="4.0" fill="#2679bd" opacity=".55"/><rect x="3.2" y="12.8" width="153.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Agent</b>Writes what moved and why.</p></div>
       <div class="row" style="--i:1;z-index:2;--x:20px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#3FA73B"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#348930" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Files</b>Reads your metric rules.</p></div>
-      <div class="row" style="--i:0;z-index:1"><svg class="brick" viewBox="0 0 200 58.4" width="200" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="168.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="168.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect y="10.4" width="200.0" height="48.0" rx="4.0" fill="#F7C51E"/><rect y="45.0" width="200.0" height="13.4" rx="4.0" fill="#cba219" opacity=".55"/><rect x="3.2" y="12.8" width="193.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Pulls 7 sources into one sheet.</p></div>
+      <div class="row" style="--i:0;z-index:1"><svg class="brick" viewBox="0 0 200 58.4" width="200" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="168.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="168.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect y="10.4" width="200.0" height="48.0" rx="4.0" fill="#F7C51E"/><rect y="45.0" width="200.0" height="13.4" rx="4.0" fill="#cba219" opacity=".55"/><rect x="3.2" y="12.8" width="193.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Pulls in all 7 sources.</p></div>
     </div>
   </div>
 </section>
@@ -244,8 +252,8 @@ footer a{text-underline-offset:3px}
 <section class="s" id="offers">
   <div class="wrap">
     <div class="shead">
-      <h2 class="d">Five fixed-price builds</h2>
-      <p>Small scope, agreed on one call. You get working code on your own accounts, not a slide deck.</p>
+      <h2 class="d">Five builds, quoted after one call</h2>
+      <p>Each one has a small, fixed scope. Tell me your tools on a 20-minute call and you get a fixed quote. You get working code on your own accounts, not a slide deck.</p>
     </div>
 
     <div class="offers">
@@ -253,37 +261,37 @@ footer a{text-underline-offset:3px}
         <div class="mini" aria-label="Built from script, agent, human and schedule bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div><h3>Report Autopilot</h3><p>A weekly marketing report built from your sources, with the numbers checked and the changes explained, posted to Slack or email.</p></div>
         <span class="t">5 days</span>
-        <span class="p">$750 to $1,500</span>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script, agent and schedule bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div><h3>Competitor Signal Desk</h3><p>A Monday brief of five competitor moves and ads, each with a line on what it means for you.</p></div>
         <span class="t">5 days, then weekly</span>
-        <span class="p">$500 setup<small>then $200 a month</small></span>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div><h3>Lead Signal List</h3><p>Fifty accounts showing buying signals right now, each with the reason to reach out this week.</p></div>
         <span class="t">4 days</span>
-        <span class="p">$500 to $900</span>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from files, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div><h3>Content Repurposer</h3><p>One recording or article turned into six posts, a carousel and a short clip, written in your voice.</p></div>
         <span class="t">1 week</span>
-        <span class="p">$600 to $1,200</span>
       </article>
       <article class="offer">
         <div class="mini" aria-label="Built from script and human bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
         <div><h3>Tracking Fix</h3><p>GA4 and Tag Manager conversion tracking checked and fixed, so every sale is counted once.</p></div>
         <span class="t">3 days</span>
-        <span class="p">$400 to $800</span>
       </article>
     </div>
 
+    <div class="quote">
+      <p>Every build gets a fixed quote before any work starts. Pricing depends on your tools and how messy the data is, so it takes one call.</p>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=20-minute%20call">Book a 20-minute call</a>
+    </div>
+
     <div class="teardown">
-      <p><b>Not sure which chore to start with?</b> Book a Loop Teardown. In one week I map every recurring marketing chore your team does, sort each step into script, agent or human, and spec the top three for a build. From $750.</p>
-      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=Loop%20Teardown">Ask for a teardown</a>
+      <p><b>Not sure which chore to start with?</b> Book a Loop Teardown. In one week I map every recurring marketing chore your team does, sort each step into script, agent or human, and spec the top three for a build.</p>
+      <a class="btn line" href="mailto:assisdevassy@gmail.com?subject=Loop%20Teardown">Ask for a teardown</a>
     </div>
     <p class="terms">Half upfront, half on delivery. One page of scope per job: what is in, what is out, one round of changes.</p>
   </div>
