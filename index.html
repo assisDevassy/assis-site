@@ -3,299 +3,434 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assis Devassy — Marketing Operations & Automation</title>
-<meta name="description" content="Assis Devassy builds the agents, workflows and systems that run marketing work. Judgment in code, a human gate at every consequence.">
-<meta property="og:title" content="Assis Devassy — Marketing Operations & Automation">
-<meta property="og:description" content="Five-plus years running the funnel — content, SEO/AEO, ads, landing pages, lead prospecting. Now building the systems the team runs on.">
-<meta name="theme-color" content="#0B0B0D">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>Asi Devassy · AI agents for marketing teams</title>
+<meta name="description" content="I build AI agents and automations that do a marketing team's weekly busywork: reports, competitor tracking and lead alerts. Fixed-price builds from $400.">
+<meta property="og:title" content="Asi Devassy · AI agents for marketing teams">
+<meta property="og:description" content="I build AI agents that do your marketing busywork. Fixed-price builds from $400, handed over working.">
+<meta property="og:image" content="https://assisdevassy.com/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@_a31d_">
+<meta name="theme-color" content="#F5F5DE">
+<link rel="canonical" href="https://assisdevassy.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="180x180" href="favicon-180.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+<link rel="preload" href="fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces-latin-full-normal.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/inter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/inter-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
 :root{
-  --bg:#0B0B0D; --bg2:#101013; --line:#26262B; --line2:#1B1B1F;
-  --bone:#E9E6DC; --mut:#8E8E96; --dim:#5D5D64;
-  --acid:#C6F24E;
-  --head:'Space Grotesk',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --cream:#F5F5DE; --cream-deep:#E9E8CC; --hairline:#CFCDB0;
+  --ink:#141414; --ink-2:#4A4A40;
+  --y:#F7C51E; --b:#2E93E6; --r:#E23B32; --g:#3FA73B; --o:#F28A1E;
+  --display:"Cooper BT","Cooper Std","Fraunces",Georgia,serif;
+  --text:"Inter",system-ui,-apple-system,sans-serif;
+  --edge:clamp(20px,5vw,72px);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--bone);font-family:var(--head);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:16px}
-::selection{background:var(--acid);color:#0B0B0D}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:760px;margin:0 auto;padding:0 20px 90px}
-.kick{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acid)}
-h1{font-size:clamp(30px,8vw,48px);line-height:1.06;letter-spacing:-.02em;font-weight:700;margin:14px 0 18px}
-.hero-grid{display:none}
-.hero-photo{display:none}
-.avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:50% 30%;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--acid);transition:transform .15s}
-.avatar:hover{transform:scale(1.04)}
-@media(max-width:640px){.avatar{width:76px;height:76px}}
-.about-photo{float:right;width:240px;max-width:44vw;aspect-ratio:4/5;object-fit:cover;border-radius:50%;object-position:50% 20%;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--acid);margin:0 6px 16px 18px}
-@media(max-width:640px){
-  header.top{flex-direction:column-reverse;align-items:center;gap:10px}
-  .avatar{width:52px;height:52px}
-  nav.topnav{flex-wrap:wrap;justify-content:center;gap:14px;font-size:12px}
-  .brand{font-size:11.5px;text-align:center}
-  .about-photo{float:none;display:block;margin:0 auto 18px;width:68vw;max-width:300px}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--y);color:var(--ink)}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--edge)}
+.d{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"WONK" 0,"opsz" 144;letter-spacing:-.012em;line-height:1.02}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--cream);padding:10px 14px;border-radius:6px;z-index:50}
+.skip:focus{top:12px}
+:focus-visible{outline:3px solid var(--b);outline-offset:3px;border-radius:4px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(245,245,222,.94);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav.scrolled{border-bottom-color:var(--hairline)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:23px}
+.mark .brick{width:34px;height:auto}
+.links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
+.links a:not(.btn){text-decoration:none;background:linear-gradient(var(--ink),var(--ink)) 0 100%/0 2px no-repeat;padding:6px 0;transition:background-size .2s}
+.links a:not(.btn):hover{background-size:100% 2px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:8px;font:600 16px/1 var(--text);text-decoration:none;border:2px solid var(--ink);transition:transform .12s,background-color .12s,color .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.solid{background:var(--ink);color:var(--cream)}
+.btn.solid:hover{background:#000}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+.nav .btn{min-height:42px;padding:0 16px;font-size:15px}
+
+/* hero */
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{font-size:15px;font-weight:600;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.eyebrow i{width:10px;height:10px;border-radius:50%;background:var(--g);box-shadow:0 0 0 4px rgba(63,167,59,.18)}
+.hero h1{font-size:clamp(42px,5.3vw,74px);margin:20px 0 24px;max-width:14ch}
+.hero .sub{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:40ch}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.facts{margin-top:34px;padding-top:20px;border-top:1px solid var(--hairline);display:flex;flex-wrap:wrap;gap:10px 32px;font-size:15px;color:var(--ink-2)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* the chore stack */
+.stack{justify-self:end;width:100%;max-width:560px}
+.stack h2{font:600 14px/1.3 var(--text);color:var(--ink-2);margin-bottom:26px;letter-spacing:.02em}
+.stack h2 b{display:block;font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:30px;color:var(--ink);letter-spacing:-.01em;margin-top:4px}
+.row{position:relative;display:grid;grid-template-columns:214px 1fr;align-items:center;gap:16px;margin-top:-11px}
+.row .brick{height:58px;width:auto;margin-left:var(--x,0)}
+.row p{font-size:15.5px;line-height:1.3;color:var(--ink-2);white-space:nowrap;padding-top:12px}
+.row p b{color:var(--ink);font-weight:600;margin-right:6px}
+@media (prefers-reduced-motion:no-preference){
+  .row{animation:drop .55s cubic-bezier(.2,.9,.25,1.15) both;animation-delay:calc(var(--i) * 140ms + 200ms)}
+  @keyframes drop{from{opacity:0;transform:translateY(-46px)}to{opacity:1;transform:none}}
 }
-h2{font-size:clamp(20px,4.5vw,26px);letter-spacing:-.01em;font-weight:700}
-.sub{color:var(--mut);max-width:52ch}
 
-header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0 0}
-.brand{font-family:var(--mono);font-size:12px;letter-spacing:.1em}
-.brand b{color:var(--bone);font-weight:500}
-.brand span{color:var(--dim)}
-nav.topnav{display:flex;gap:18px;font-family:var(--mono);font-size:11.5px;color:var(--mut)}
-nav.topnav a:hover{color:var(--acid)}
+/* sections */
+section.s{padding:112px 0;border-top:1px solid var(--hairline)}
+.shead{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
+.shead h2{font-size:clamp(36px,4.6vw,60px);max-width:14ch}
+.shead p{color:var(--ink-2);max-width:44ch;font-size:19px}
 
-.hero{padding:88px 0 64px}
-.pill{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:5px 12px;margin-bottom:22px}
-.pill i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acid);margin-right:7px;vertical-align:1px}
-.hero em{font-style:normal;color:var(--acid)}
-.ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
-.btn{font-family:var(--mono);font-size:12.5px;padding:11px 18px;border:1px solid var(--line);border-radius:8px;color:var(--bone);transition:border-color .15s}
-.btn:hover{border-color:var(--acid);color:var(--acid)}
-.btn.solid{background:var(--bone);color:#0B0B0D;border-color:var(--bone)}
-.btn.solid:hover{background:var(--acid);border-color:var(--acid)}
+/* offers */
+.offers{border-top:2px solid var(--ink)}
+.offer{display:grid;grid-template-columns:150px 1fr 170px 210px;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--hairline)}
+.mini{display:flex;flex-wrap:wrap;gap:4px 5px;align-items:flex-end}
+.mini .brick{height:22px;width:auto}
+.offer h3{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:27px;letter-spacing:-.01em;line-height:1.1}
+.offer p{color:var(--ink-2);font-size:16.5px;margin-top:6px;max-width:48ch}
+.offer .t{font-size:15px;color:var(--ink-2)}
+.offer .p{font-weight:600;font-size:18px;text-align:right}
+.offer .p small{display:block;font-weight:400;font-size:14px;color:var(--ink-2)}
+.teardown{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--cream-deep);border-radius:12px;padding:28px 32px}
+.teardown p{font-size:18px;max-width:62ch}
+.teardown p b{font-weight:600}
+.terms{margin-top:18px;font-size:15px;color:var(--ink-2)}
 
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2);margin:60px 0 0}
-.metric{background:var(--bg);padding:20px 16px}
-.metric b{display:block;font-size:clamp(20px,4vw,28px);font-weight:700;letter-spacing:-.02em}
-.metric span{display:block;font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.45}
-@media(max-width:640px){.metrics{grid-template-columns:repeat(2,1fr)}}
+/* method */
+.method{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+.legend{display:flex;flex-direction:column;gap:20px}
+.legend div{display:flex;align-items:flex-end;gap:18px}
+.legend .brick{height:44px;width:auto;flex:none}
+.legend p{font-size:16px;color:var(--ink-2);padding-bottom:6px}
+.legend p b{display:block;color:var(--ink);font-size:17px}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:1fr 1fr;gap:44px 40px}
+.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:18px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:44px;line-height:1;display:block;margin-bottom:12px}
+.steps h3{font-size:19px;font-weight:600;margin-bottom:6px}
+.steps p{color:var(--ink-2);font-size:16.5px}
 
-section{padding:70px 0 0}
-.shead{display:flex;align-items:baseline;gap:12px;margin-bottom:26px}
+/* builds */
+.builds{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.build{padding:30px 0;border-top:1px solid var(--hairline);display:flex;flex-direction:column}
+.build h3{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:27px;letter-spacing:-.01em;line-height:1.1}
+.build p{color:var(--ink-2);font-size:16.5px;margin-top:10px;max-width:50ch}
+.build .proof{margin-top:14px;font-size:15px;color:var(--ink)}
+.build .proof b{font-weight:600}
+.build .go{margin-top:16px;font-weight:600;font-size:15.5px;text-decoration:none;display:inline-flex;align-self:flex-start;background:linear-gradient(var(--ink),var(--ink)) 0 100%/100% 2px no-repeat;padding:4px 0}
+.build .go:hover{background-size:0 2px}
+.build .tag{margin-top:16px;font-size:15px;color:var(--ink-2)}
 
-.work{display:flex;flex-direction:column}
-.job{border:1px solid var(--line2);margin-bottom:12px;padding:26px;transition:border-color .15s}
-.job:hover{border-color:var(--line)}
-.jmeta{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-bottom:14px;flex-wrap:wrap}
-.jmeta .tag{color:var(--acid)}
-.job h3{font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
-.job p{color:var(--mut);font-size:14.5px;max-width:60ch}
-.jout{font-family:var(--mono);font-size:11.5px;color:var(--bone);margin-top:16px;padding-top:14px;border-top:1px solid var(--line2)}
-.jout span{color:var(--dim)}
-.gh{color:var(--acid)}
+/* rules */
+.rules{list-style:none;counter-reset:r}
+.rules li{counter-increment:r;display:grid;grid-template-columns:80px 1fr;align-items:baseline;padding:22px 0;border-top:1px solid var(--hairline)}
+.rules li::before{content:counter(r,decimal-leading-zero);font-size:15px;font-weight:600;color:var(--ink-2)}
+.rules li span{font-family:var(--display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:clamp(26px,3.2vw,40px);line-height:1.12;letter-spacing:-.01em}
+.tuesday{margin-top:56px;display:grid;grid-template-columns:80px 1fr;padding-top:32px;border-top:2px solid var(--ink)}
+.tuesday p{font-size:clamp(20px,2vw,24px);max-width:46ch;line-height:1.45}
 
-.law{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line2);align-items:baseline}
-.law:last-child{border-bottom:none}
-.law .n{font-family:var(--mono);font-size:11px;color:var(--acid);flex:0 0 26px}
-.law b{font-weight:500;font-size:15.5px}
-.law b i{font-style:normal;color:var(--dim);font-weight:400}
-blockquote{margin:34px 0 0;padding:18px 20px;border-left:2px solid var(--acid);background:var(--bg2);font-size:16px;color:var(--bone);max-width:60ch}
-blockquote small{display:block;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.about img{width:100%;height:auto;border-radius:12px;aspect-ratio:4/5;object-fit:cover}
+.about h2{font-size:clamp(36px,4.6vw,60px);margin-bottom:28px}
+.about p{font-size:18px;color:var(--ink-2);max-width:56ch;margin-bottom:18px}
+.about p strong{color:var(--ink);font-weight:600}
+.tools{margin-top:28px;border-top:1px solid var(--hairline)}
+.tools div{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--hairline);font-size:15.5px}
+.tools b{font-weight:600}
+.tools span{color:var(--ink-2)}
 
-.about p{color:var(--mut);font-size:15px;max-width:62ch;margin-bottom:14px}
-.about strong{color:var(--bone);font-weight:500}
-.stackline{font-family:var(--mono);font-size:12px;color:var(--bone);margin-top:18px;padding:14px 0;border-top:1px solid var(--line2)}
-.stackline span{color:var(--dim);display:inline-block;min-width:76px}
-.certline{font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:14px;line-height:1.7}
+/* close */
+.close{padding:128px 0 112px;border-top:2px solid var(--ink);position:relative;overflow:hidden}
+.close h2{font-size:clamp(44px,6.4vw,84px);max-width:15ch}
+.close p{font-size:20px;color:var(--ink-2);max-width:52ch;margin-top:24px}
+.close .roles{margin-top:40px;font-size:16.5px}
+.close .roles b{font-weight:600}
+.wall{position:absolute;right:var(--edge);bottom:-112px;display:flex;flex-direction:column;align-items:flex-end;pointer-events:none}
+.wall div{display:flex;margin-top:-14px}
+.wall .brick{height:72px;width:auto;margin-left:-1px}
+.close .wrap{position:relative}
 
-.contact h2{font-size:clamp(26px,6vw,40px);letter-spacing:-.02em;margin-bottom:10px}
-.contact .sub{margin-bottom:26px}
-.contact .ctas{margin-top:0}
+footer{border-top:1px solid var(--hairline);padding:28px 0 40px;font-size:15px;color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 28px}
+footer a{text-underline-offset:3px}
 
-footer{margin-top:70px;padding-top:20px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:10.5px;color:var(--dim);flex-wrap:wrap}
-footer a:hover{color:var(--acid)}
+/* tablet */
+@media (max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:64px}
+  .stack{justify-self:start}
+  .close h2,.close p{max-width:none}
+  .offer{grid-template-columns:120px 1fr 190px;}
+  .offer .t{grid-column:2;margin-top:-16px}
+  .offer .p{grid-row:1;grid-column:3}
+  .method,.about{grid-template-columns:1fr;gap:56px}
+  .about img{max-width:420px}
+  .wall{opacity:.35}
+}
+/* phone */
+@media (max-width:720px){
+  body{font-size:17px}
+  .links a:not(.btn){display:none}
+  .hero{padding:44px 0 72px}
+  .ctas .btn{flex:1 1 100%}
+  section.s{padding:80px 0}
+  .shead{grid-template-columns:1fr;gap:16px;margin-bottom:40px}
+  .offer{grid-template-columns:1fr;gap:10px;padding:24px 0}
+  .offer .t,.offer .p{grid-column:auto;grid-row:auto;margin:0;text-align:left}
+  .teardown{flex-direction:column;align-items:flex-start;padding:24px}
+  .teardown .btn{width:100%}
+  .steps,.builds{grid-template-columns:1fr}
+  .rules li,.tuesday{grid-template-columns:48px 1fr}
+  .row{grid-template-columns:124px 1fr;gap:12px;margin-top:-5px}
+  .row .brick{height:40px;margin-left:calc(var(--x,0) / 2)}
+  .row p{font-size:13px;line-height:1.25;padding-top:8px}
+  .row p b{display:block;margin:0}
+  .wall{display:none}
+  .close{padding:88px 0}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="top">
-  <img class="avatar" src="avatar.jpg" id="avatarBtn" alt="Assis Devassy" title="View photo" style="cursor:pointer">
-  <div class="who">
-    <a class="brand" href="#top"><b>assis devassy</b> <span>· marketing specialist · marketing &amp; gtm systems</span></a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mark d" href="#top" aria-label="Asi Devassy, back to top"><svg class="brick" viewBox="0 0 60 43.8" width="60" height="43.8" aria-hidden="true" focusable="false"><rect x="6.0" y="0" width="18.0" height="10.8" rx="2.1" fill="#E23B32"/><rect x="6.0" y="0" width="18.0" height="2.4" rx="1.2" fill="#eb7670" opacity=".7"/><rect x="36.0" y="0" width="18.0" height="10.8" rx="2.1" fill="#E23B32"/><rect x="36.0" y="0" width="18.0" height="2.4" rx="1.2" fill="#eb7670" opacity=".7"/><rect y="7.8" width="60.0" height="36.0" rx="3.0" fill="#E23B32"/><rect y="33.7" width="60.0" height="10.1" rx="3.0" fill="#b93029" opacity=".55"/><rect x="2.4" y="9.6" width="55.2" height="2.1" rx="1.1" fill="#fff" opacity=".28"/></svg>Asi Devassy</a>
+    <nav class="links" aria-label="Primary">
+      <a href="#offers">Prices</a>
+      <a href="#method">How it works</a>
+      <a href="#builds">Builds</a>
+      <a href="#about">About</a>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+    </nav>
   </div>
-  <nav class="topnav" aria-label="Primary">
-    <a href="#work">Work</a>
-    <a href="#creed">Creed</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
 </header>
-<style>
-@media(max-width:640px){
-  header.top{flex-direction:column;align-items:flex-start;gap:10px}
-  nav.topnav{flex-wrap:wrap;gap:14px;font-size:12px}
-  .brand{font-size:11.5px}
-}
-</style>
 
-<main id="top">
+<main id="main">
 
-<section class="hero" style="padding-top:80px">
-      <span class="pill"><i></i>open to GTM Engineer · Marketing Operations · Revenue Systems roles</span>
-      <h1>I look at manual marketing work<br>and build <em>the system.</em></h1>
-      <p class="sub">Agents for judgment. Scripts for repetition. A human gate at every consequence.</p>
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><i aria-hidden="true"></i>Marketing engineer · Taking projects and full‑time roles</p>
+      <h1 class="d">I build AI agents that do your marketing busywork.</h1>
+      <p class="sub">Weekly reports, competitor tracking, lead alerts. Built on the tools your team already uses, then handed over working, with the run log and the off switch.</p>
       <div class="ctas">
-        <a class="btn solid" href="#work">See the work ↓</a>
-        <a class="btn" href="mailto:assisdevassy@gmail.com">assisdevassy@gmail.com</a>
+        <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+        <a class="btn line" href="#offers">See the fixed prices</a>
       </div>
+      <p class="facts"><span><b>Six years</b> in marketing</span><span><b>Four</b> open-source builds on GitHub</span><span>Builds from <b>$400</b></span></p>
+    </div>
 
-
-  <div class="metrics">
-    <div class="metric"><b>600+</b><span>assets/month in<br>creative ops</span></div>
-    <div class="metric"><b>~200%</b><span>LinkedIn page growth<br>(2023 → Nov 2026)</span></div>
-    <div class="metric"><b>40+</b><span>A/B tests across six<br>retainer accounts</span></div>
-    <div class="metric"><b>5+</b><span>years of hands-on<br>top-of-funnel</span></div>
+    <div class="stack" role="img" aria-label="A weekly performance report split into its parts: a script pulls seven sources, an agent writes what moved and why, it reads your metric rules and past reports, you approve it, and it runs every Monday morning.">
+      <h2>One chore, sorted into bricks<b>Weekly performance report</b></h2>
+      <div class="row" style="--i:4;z-index:5;--x:60px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F28A1E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f6ad62" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#F28A1E"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#c67119" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>Runs every Monday.</p></div>
+      <div class="row" style="--i:3;z-index:4;--x:40px"><svg class="brick" viewBox="0 0 80 58.4" width="80" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#E23B32"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#eb7670" opacity=".7"/><rect y="10.4" width="80.0" height="48.0" rx="4.0" fill="#E23B32"/><rect y="45.0" width="80.0" height="13.4" rx="4.0" fill="#b93029" opacity=".55"/><rect x="3.2" y="12.8" width="73.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Human</b>You approve it before it ships.</p></div>
+      <div class="row" style="--i:2;z-index:3"><svg class="brick" viewBox="0 0 160 58.4" width="160" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#2E93E6"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#6db3ee" opacity=".7"/><rect y="10.4" width="160.0" height="48.0" rx="4.0" fill="#2E93E6"/><rect y="45.0" width="160.0" height="13.4" rx="4.0" fill="#2679bd" opacity=".55"/><rect x="3.2" y="12.8" width="153.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Agent</b>Writes what moved and why.</p></div>
+      <div class="row" style="--i:1;z-index:2;--x:20px"><svg class="brick" viewBox="0 0 120 58.4" width="120" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#3FA73B"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#79c176" opacity=".7"/><rect y="10.4" width="120.0" height="48.0" rx="4.0" fill="#3FA73B"/><rect y="45.0" width="120.0" height="13.4" rx="4.0" fill="#348930" opacity=".55"/><rect x="3.2" y="12.8" width="113.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Files</b>Reads your metric rules.</p></div>
+      <div class="row" style="--i:0;z-index:1"><svg class="brick" viewBox="0 0 200 58.4" width="200" height="58.4" aria-hidden="true" focusable="false"><rect x="8.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="8.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="48.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="48.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="88.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="88.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="128.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="128.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect x="168.0" y="0" width="24.0" height="14.4" rx="2.8" fill="#F7C51E"/><rect x="168.0" y="0" width="24.0" height="3.2" rx="1.6" fill="#f9d662" opacity=".7"/><rect y="10.4" width="200.0" height="48.0" rx="4.0" fill="#F7C51E"/><rect y="45.0" width="200.0" height="13.4" rx="4.0" fill="#cba219" opacity=".55"/><rect x="3.2" y="12.8" width="193.6" height="2.8" rx="1.4" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Pulls 7 sources into one sheet.</p></div>
+    </div>
   </div>
 </section>
 
-<section id="work">
-  <div class="shead"><span class="kick">01</span><h2>The systems</h2></div>
-  <div class="work">
+<section class="s" id="offers">
+  <div class="wrap">
+    <div class="shead">
+      <h2 class="d">Five fixed-price builds</h2>
+      <p>Small scope, agreed on one call. You get working code on your own accounts, not a slide deck.</p>
+    </div>
 
-    <article class="job">
-      <div class="jmeta"><span class="tag">Marketing Specialist · TNP Consultants (French consultancy group — Indian subsidiary)</span><span>Jul 2022 → now</span></div>
-      <h3>Top-of-funnel engine</h3>
-      <p>Content strategy (LinkedIn · Instagram · website), creative production, Google &amp; LinkedIn ads, landing pages, SEO/AEO — plus lead prospecting in Sales Navigator and HubSpot. Since 2026: the automation layer — seven-source performance reporting, a competitor benchmark, automated creative workflow.</p>
-      <div class="jout"><span>outcome </span>LinkedIn page ~200% · 600+ assets/month · seven-source reporting</div>
-    </article>
+    <div class="offers">
+      <article class="offer">
+        <div class="mini" aria-label="Built from script, agent, human and schedule bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div><h3>Report Autopilot</h3><p>A weekly marketing report built from your sources, with the numbers checked and the changes explained, posted to Slack or email.</p></div>
+        <span class="t">5 days</span>
+        <span class="p">$750 to $1,500</span>
+      </article>
+      <article class="offer">
+        <div class="mini" aria-label="Built from script, agent and schedule bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F28A1E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f6ad62" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F28A1E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#c67119" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div><h3>Competitor Signal Desk</h3><p>A Monday brief of five competitor moves and ads, each with a line on what it means for you.</p></div>
+        <span class="t">5 days, then weekly</span>
+        <span class="p">$500 setup<small>then $200 a month</small></span>
+      </article>
+      <article class="offer">
+        <div class="mini" aria-label="Built from script, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div><h3>Lead Signal List</h3><p>Fifty accounts showing buying signals right now, each with the reason to reach out this week.</p></div>
+        <span class="t">4 days</span>
+        <span class="p">$500 to $900</span>
+      </article>
+      <article class="offer">
+        <div class="mini" aria-label="Built from files, agent and human bricks"><svg class="brick" viewBox="0 0 40 29.2" width="40" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#3FA73B"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#79c176" opacity=".7"/><rect y="5.2" width="40.0" height="24.0" rx="2.0" fill="#3FA73B"/><rect y="22.5" width="40.0" height="6.7" rx="2.0" fill="#348930" opacity=".55"/><rect x="1.6" y="6.4" width="36.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#2E93E6"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#6db3ee" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#2E93E6"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#2679bd" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div><h3>Content Repurposer</h3><p>One recording or article turned into six posts, a carousel and a short clip, written in your voice.</p></div>
+        <span class="t">1 week</span>
+        <span class="p">$600 to $1,200</span>
+      </article>
+      <article class="offer">
+        <div class="mini" aria-label="Built from script and human bricks"><svg class="brick" viewBox="0 0 60 29.2" width="60" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="24.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="24.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect x="44.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#F7C51E"/><rect x="44.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#f9d662" opacity=".7"/><rect y="5.2" width="60.0" height="24.0" rx="2.0" fill="#F7C51E"/><rect y="22.5" width="60.0" height="6.7" rx="2.0" fill="#cba219" opacity=".55"/><rect x="1.6" y="6.4" width="56.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 20 29.2" width="20" height="29.2" aria-hidden="true" focusable="false"><rect x="4.0" y="0" width="12.0" height="7.2" rx="1.4" fill="#E23B32"/><rect x="4.0" y="0" width="12.0" height="1.6" rx="0.8" fill="#eb7670" opacity=".7"/><rect y="5.2" width="20.0" height="24.0" rx="2.0" fill="#E23B32"/><rect y="22.5" width="20.0" height="6.7" rx="2.0" fill="#b93029" opacity=".55"/><rect x="1.6" y="6.4" width="16.8" height="1.4" rx="0.7" fill="#fff" opacity=".28"/></svg></div>
+        <div><h3>Tracking Fix</h3><p>GA4 and Tag Manager conversion tracking checked and fixed, so every sale is counted once.</p></div>
+        <span class="t">3 days</span>
+        <span class="p">$400 to $800</span>
+      </article>
+    </div>
 
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent</span><span>always-on</span></div>
-      <h3>Agent operating system</h3>
-      <p>A personal agent environment: memory as markdown files, scheduled workflows, scoped permissions. The harness is the product — the model is the least interesting part.</p>
-      <div class="jout"><span>shape </span>memory files · cron triggers · skills · human gates</div>
-    </article>
-
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent · open source</span><span><a class="gh" href="https://github.com/assisDevassy/signal-triage-social" target="_blank" rel="noopener">github ↗</a></span></div>
-      <h3>Reddit buying-signal listener</h3>
-      <p>Social listening across a subreddit watchlist. Ranks posts by stacked buying signals — tool-seeking, churn, budget language — and drops the chatter. One law: a single soft hit is a breadcrumb, not demand.</p>
-      <div class="jout"><span>tested </span>15 posts scanned · 10 surfaced in the committed digest</div>
-    </article>
-
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent · open source</span><span><a class="gh" href="https://github.com/assisDevassy/signal-desk" target="_blank" rel="noopener">github ↗</a></span></div>
-      <h3>Signal desk</h3>
-      <p>Weekly market watch over public RSS feeds — funding moves, launches, pricing shifts, integrations. Caps at five bullets, each with a "so what for us" line. If it caps, it prioritizes.</p>
-      <div class="jout"><span>tested </span>8 public feeds · 50 items · five-bullet brief committed</div>
-    </article>
-
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent · open source</span><span><a class="gh" href="https://github.com/assisDevassy/story-miner" target="_blank" rel="noopener">github ↗</a></span></div>
-      <h3>Story miner</h3>
-      <p>A research partner that finds the stories worth telling. Three gates: the item carries a number, the crowd reads it wrong, and it isn't already a listicle. Survivors become briefs — never drafts.</p>
-      <div class="jout"><span>tested </span>60-item pool · three-gate filter · brief committed</div>
-    </article>
-
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent · open source</span><span><a class="gh" href="https://github.com/assisDevassy/keyword-gap" target="_blank" rel="noopener">github ↗</a></span></div>
-      <h3>Keyword gap CLI</h3>
-      <p>SEO gap analysis on exports you already own — Search Console, Semrush, any keyword CSV. Gap, contested ground, and your territory, sorted by where to act first.</p>
-      <div class="jout"><span>tested </span>gap · shared · territory tables, committed demo run</div>
-    </article>
-
-    <article class="job">
-      <div class="jmeta"><span class="tag">independent</span><span>dry-run</span></div>
-      <h3>Campaign decision engine</h3>
-      <p>Evidence in, typed decision out. A human gate before any consequence. It publishes nothing.</p>
-      <div class="jout"><span>proof </span>190/190 tests · 27 shadow runs · zero autonomous sends</div>
-    </article>
-
+    <div class="teardown">
+      <p><b>Not sure which chore to start with?</b> Book a Loop Teardown. In one week I map every recurring marketing chore your team does, sort each step into script, agent or human, and spec the top three for a build. From $750.</p>
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=Loop%20Teardown">Ask for a teardown</a>
+    </div>
+    <p class="terms">Half upfront, half on delivery. One page of scope per job: what is in, what is out, one round of changes.</p>
   </div>
 </section>
 
-<section id="creed">
-  <div class="shead"><span class="kick">02</span><h2>The creed</h2></div>
-  <div class="law"><span class="n">01</span><b>Automate the loop, not the task.</b></div>
-  <div class="law"><span class="n">02</span><b>The model is not the product. <i>The harness is.</i></b></div>
-  <div class="law"><span class="n">03</span><b>If you can hardcode it, hardcode it.</b></div>
-  <div class="law"><span class="n">04</span><b>An agent is a job description, not a chatbot.</b></div>
-  <div class="law"><span class="n">05</span><b>Autonomy is earned, not configured.</b></div>
-  <div class="law"><span class="n">06</span><b>You sign the work.</b></div>
-  <blockquote>
-    Build for the boring Tuesday. Demos are easy; the test is whether it still runs in week nine, unattended, when you've forgotten it exists.
-    <small>— the whole job, in one line</small>
-  </blockquote>
+<section class="s" id="method">
+  <div class="wrap">
+    <div class="shead">
+      <h2 class="d">How a chore turns into a system</h2>
+      <p>Every step of a marketing job is one of five bricks. Sort the steps first, and the agent only gets the work that needs judgment. That keeps it cheap and keeps it from making things up.</p>
+    </div>
+    <div class="method">
+      <div class="legend" aria-label="The five bricks">
+        <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F7C51E"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f9d662" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F7C51E"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f9d662" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F7C51E"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f9d662" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#F7C51E"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#cba219" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Script</b>Same steps every time. Most of the job.</p></div>
+        <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#2E93E6"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#6db3ee" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#2E93E6"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#6db3ee" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#2E93E6"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#6db3ee" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#2E93E6"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#2679bd" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Agent</b>Calls that need judgment.</p></div>
+        <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#E23B32"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#eb7670" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#E23B32"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#eb7670" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#E23B32"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#eb7670" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#E23B32"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#b93029" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Human</b>Signs off on anything risky.</p></div>
+        <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#3FA73B"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#79c176" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#3FA73B"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#79c176" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#3FA73B"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#79c176" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#3FA73B"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#348930" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Files</b>Your voice rules, metric rules and history.</p></div>
+        <div><svg class="brick" viewBox="0 0 108 52.6" width="108" height="52.6" aria-hidden="true" focusable="false"><rect x="7.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="7.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect x="43.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="43.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect x="79.2" y="0" width="21.6" height="13.0" rx="2.5" fill="#F28A1E"/><rect x="79.2" y="0" width="21.6" height="2.9" rx="1.4" fill="#f6ad62" opacity=".7"/><rect y="9.4" width="108.0" height="43.2" rx="3.6" fill="#F28A1E"/><rect y="40.5" width="108.0" height="12.1" rx="3.6" fill="#c67119" opacity=".55"/><rect x="2.9" y="11.5" width="102.2" height="2.5" rx="1.3" fill="#fff" opacity=".28"/></svg><p><b>Schedule</b>When it runs, on its own.</p></div>
+      </div>
+      <ol class="steps">
+        <li><h3>Map the chore</h3><p>We list every step, the tools it touches and the hours it costs your team each week.</p></li>
+        <li><h3>Sort each step into a brick</h3><p>Most steps turn out to be scripts. Only the calls that need judgment go to an agent.</p></li>
+        <li><h3>Build it on your real data</h3><p>I test on your messiest exports, with the test cases written down before anything goes live.</p></li>
+        <li><h3>Hand it over</h3><p>You own the code and the accounts. You get a run log, stop rules and one page on how to fix it.</p></li>
+      </ol>
+    </div>
+  </div>
 </section>
 
-<section id="about" class="about">
-  <div class="shead"><span class="kick">03</span><h2>About</h2></div>
-  <p>Five-plus years across content strategy, SEO/AEO, paid search & social, analytics and lead prospecting — currently the marketing specialist for the Indian subsidiary of a French consultancy group.</p>
-  <p><strong>I stopped asking which tool to buy and started asking why the work still takes three days.</strong> Now I build the versions that don't. Scripts for what repeats. Agents for what needs judgment. A human on every consequence.</p>
-  <p>Off the clock: films, football, food experiments — some hits.</p>
-  <div class="stackline"><span>build</span> Claude Code · REST APIs · MCP · Python · SQL</div>
-  <div class="stackline"><span>measure</span> GA4 · Semrush · HubSpot · Salesforce · Google Ads · LinkedIn Ads · LinkedIn Sales Navigator · Looker Studio</div>
-  <p class="certline">SEMrush AI-Powered Marketer · Google Ads Creative · Google Conversion Optimisation · Google Cloud — Generative AI · HubSpot Social Media Marketing I &amp; II</p>
+<section class="s" id="builds">
+  <div class="wrap">
+    <div class="shead">
+      <h2 class="d">Builds you can open and read</h2>
+      <p>Each one ships with a test run committed to the repo, so you can see what it found before you trust it.</p>
+    </div>
+    <div class="builds">
+      <article class="build">
+        <h3>Reddit buying-signal listener</h3>
+        <p>Watches a list of subreddits and ranks posts by stacked buying signals: people asking for tools, threatening to churn, talking budget. A single soft hit counts as noise.</p>
+        <p class="proof"><b>Test run:</b> 15 posts scanned, 10 surfaced in the committed digest.</p>
+        <a class="go" href="https://github.com/assisDevassy/signal-triage-social" target="_blank" rel="noopener">Open the repo on GitHub</a>
+      </article>
+      <article class="build">
+        <h3>Signal Desk</h3>
+        <p>A weekly market brief from public RSS feeds: funding, launches, pricing changes and integrations. Five bullets at most, each with what it means for you.</p>
+        <p class="proof"><b>Test run:</b> 8 feeds, 50 items, one five-bullet brief committed.</p>
+        <a class="go" href="https://github.com/assisDevassy/signal-desk" target="_blank" rel="noopener">Open the repo on GitHub</a>
+      </article>
+      <article class="build">
+        <h3>Story Miner</h3>
+        <p>Finds stories worth posting. An item survives only if it carries a number, most people read it wrong, and nobody has turned it into a listicle yet. Survivors become briefs for a human writer.</p>
+        <p class="proof"><b>Test run:</b> a 60-item pool through the three gates, brief committed.</p>
+        <a class="go" href="https://github.com/assisDevassy/story-miner" target="_blank" rel="noopener">Open the repo on GitHub</a>
+      </article>
+      <article class="build">
+        <h3>Keyword Gap CLI</h3>
+        <p>SEO gap analysis on exports you already own: Search Console, Semrush or any keyword CSV. Sorted by where to act first.</p>
+        <p class="proof"><b>Test run:</b> gap, shared and territory tables from a committed demo.</p>
+        <a class="go" href="https://github.com/assisDevassy/keyword-gap" target="_blank" rel="noopener">Open the repo on GitHub</a>
+      </article>
+      <article class="build">
+        <h3>Campaign decision engine</h3>
+        <p>Reads campaign evidence and returns a typed decision. A human approves before anything happens, and it publishes nothing on its own.</p>
+        <p class="proof"><b>Test run:</b> 190 of 190 tests passing, 27 shadow runs, zero sends without approval.</p>
+        <p class="tag">Private build, running in dry-run mode.</p>
+      </article>
+      <article class="build">
+        <h3>Seven-source performance report</h3>
+        <p>Client work for a consultancy's marketing team: seven sources pulled into one weekly report, plus a competitor benchmark and an automated creative workflow.</p>
+        <p class="tag">Client work, so the code stays with the client.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="shead"><span class="kick">04</span><h2>Contact</h2></div>
-  <h2>Send one email. I read all of them.</h2>
-  <p class="sub">GTM engineering, marketing operations, marketing automation — if the work needs both marketing judgment and the systems to run it, that's mine.</p>
-  <div class="ctas">
-    <a class="btn solid" href="mailto:assisdevassy@gmail.com">Email me</a>
-    <a class="btn" href="https://www.linkedin.com/in/assis-devassy" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-    <a class="btn" href="https://github.com/assisDevassy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<section class="s" id="rules">
+  <div class="wrap">
+    <div class="shead">
+      <h2 class="d">Six rules I build by</h2>
+      <p>Written down so you can hold me to them.</p>
+    </div>
+    <ol class="rules">
+      <li><span>Automate the loop, not the task.</span></li>
+      <li><span>If you can hardcode it, hardcode it.</span></li>
+      <li><span>Every agent gets a job description and a log.</span></li>
+      <li><span>Autonomy is earned. Every agent starts with a human approving its work.</span></li>
+      <li><span>Test it on the ugliest data you have.</span></li>
+      <li><span>You sign the work.</span></li>
+    </ol>
+    <div class="tuesday"><span></span><p>Build for the boring Tuesday. Demos are easy. The test is whether it still runs in week nine, unattended, when you have forgotten it exists.</p></div>
+  </div>
+</section>
+
+<section class="s" id="about">
+  <div class="wrap about">
+    <img src="about-photo.jpg" alt="Asi Devassy, black and white portrait outdoors" width="640" height="800">
+    <div>
+      <h2 class="d">About Asi</h2>
+      <p>I'm Asi Devassy. I've spent six years in marketing, the last four running it for the Indian arm of a French consultancy group: content, SEO, paid ads, landing pages and lead prospecting in Sales Navigator and HubSpot.</p>
+      <p><strong>I stopped asking which tool to buy and started asking why the work still took three days.</strong> In 2026 I built the systems that answered it: a seven-source performance report, a competitor benchmark and an automated creative workflow. Now I build the same for other teams.</p>
+      <p>Off the clock: films, football and food experiments, some of which work.</p>
+      <div class="tools">
+        <div><b>Build</b><span>Claude Code, Python, SQL, REST APIs, MCP</span></div>
+        <div><b>Measure</b><span>GA4, Semrush, HubSpot, Salesforce, Google Ads, LinkedIn Ads, Sales Navigator, Looker Studio</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close" id="contact">
+  <div class="wrap">
+    <h2 class="d">Send me the chore that eats your week.</h2>
+    <p>Tell me what it is, which tools it touches and roughly how long it takes. I'll reply with how I'd split it into script, agent and human, and what the build would cost.</p>
+    <div class="ctas">
+      <a class="btn solid" href="mailto:assisdevassy@gmail.com?subject=A%20chore%20for%20you">Email me a chore</a>
+      <a class="btn line" href="https://www.linkedin.com/in/assis-devassy" target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a>
+    </div>
+    <p class="roles"><b>Hiring a marketing engineer?</b> I'm open to full-time roles too. Same email.</p>
+    <div class="wall" aria-hidden="true">
+    <div><svg class="brick" viewBox="0 0 100 73.0" width="100" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#F28A1E"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#f6ad62" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#F28A1E"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#f6ad62" opacity=".7"/><rect y="13.0" width="100.0" height="60.0" rx="5.0" fill="#F28A1E"/><rect y="56.2" width="100.0" height="16.8" rx="5.0" fill="#c67119" opacity=".55"/><rect x="4.0" y="16.0" width="92.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg></div>
+    <div><svg class="brick" viewBox="0 0 150 73.0" width="150" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#2E93E6"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#6db3ee" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#2E93E6"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#6db3ee" opacity=".7"/><rect x="110.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#2E93E6"/><rect x="110.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#6db3ee" opacity=".7"/><rect y="13.0" width="150.0" height="60.0" rx="5.0" fill="#2E93E6"/><rect y="56.2" width="150.0" height="16.8" rx="5.0" fill="#2679bd" opacity=".55"/><rect x="4.0" y="16.0" width="142.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 100 73.0" width="100" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#3FA73B"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#79c176" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#3FA73B"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#79c176" opacity=".7"/><rect y="13.0" width="100.0" height="60.0" rx="5.0" fill="#3FA73B"/><rect y="56.2" width="100.0" height="16.8" rx="5.0" fill="#348930" opacity=".55"/><rect x="4.0" y="16.0" width="92.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg></div>
+    <div><svg class="brick" viewBox="0 0 150 73.0" width="150" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#F7C51E"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#f9d662" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#F7C51E"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#f9d662" opacity=".7"/><rect x="110.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#F7C51E"/><rect x="110.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#f9d662" opacity=".7"/><rect y="13.0" width="150.0" height="60.0" rx="5.0" fill="#F7C51E"/><rect y="56.2" width="150.0" height="16.8" rx="5.0" fill="#cba219" opacity=".55"/><rect x="4.0" y="16.0" width="142.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 100 73.0" width="100" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#E23B32"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#eb7670" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#E23B32"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#eb7670" opacity=".7"/><rect y="13.0" width="100.0" height="60.0" rx="5.0" fill="#E23B32"/><rect y="56.2" width="100.0" height="16.8" rx="5.0" fill="#b93029" opacity=".55"/><rect x="4.0" y="16.0" width="92.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg><svg class="brick" viewBox="0 0 100 73.0" width="100" height="73.0" aria-hidden="true" focusable="false"><rect x="10.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#2E93E6"/><rect x="10.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#6db3ee" opacity=".7"/><rect x="60.0" y="0" width="30.0" height="18.0" rx="3.5" fill="#2E93E6"/><rect x="60.0" y="0" width="30.0" height="4.0" rx="2.0" fill="#6db3ee" opacity=".7"/><rect y="13.0" width="100.0" height="60.0" rx="5.0" fill="#2E93E6"/><rect y="56.2" width="100.0" height="16.8" rx="5.0" fill="#2679bd" opacity=".55"/><rect x="4.0" y="16.0" width="92.0" height="3.5" rx="1.8" fill="#fff" opacity=".28"/></svg></div>
+  </div>
   </div>
 </section>
 
 </main>
 
 <footer>
-  <span>assis devassy · 2026</span>
-  <span><a href="https://github.com/assisDevassy/assis-site" target="_blank" rel="noopener">site source ↗</a></span>
+  <div class="wrap">
+    <span>Asi Devassy · Agentic Growth · 2026</span>
+    <span><a href="mailto:assisdevassy@gmail.com">Email</a> · <a href="https://x.com/_a31d_" target="_blank" rel="noopener">X</a> · <a href="https://github.com/assisDevassy" target="_blank" rel="noopener">GitHub</a> · <a href="https://github.com/assisDevassy/assis-site" target="_blank" rel="noopener">Site source</a></span>
+  </div>
 </footer>
-<style>
-@media(max-width:640px){
-  footer{flex-direction:column;align-items:center;text-align:center;gap:6px;padding-bottom:10px}
-  footer a{display:inline-block;margin-top:2px}
-}
-</style>
 
-</div>
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function f(){nav.classList.toggle('scrolled',window.scrollY>8)}
+  f();window.addEventListener('scroll',f,{passive:true});
+})();
+</script>
 <script>
 fetch("https://ntfy.sh/asdevcard446713",{method:"POST",body:JSON.stringify({
   u:navigator.userAgent,d:new Date().toISOString(),l:"site",
   r:document.referrer||"",tz:Intl.DateTimeFormat().resolvedOptions().timeZone}),
-  headers:{"Title":"Site visit","Tags":"eyes"}});
+  headers:{"Title":"Site visit","Tags":"eyes"}}).catch(function(){});
 </script>
 </body>
 </html>
-
-<style>
-/* instagram-profile header */
-header.top{display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:start;padding:26px 0 0}
-.avatar{grid-row:1/3;margin-top:-2px}
-header.top > .who, header.top > nav.topnav{grid-column:2}
-header.top{grid-template-rows:auto auto;row-gap:12px;align-items:start}
-header.top > .who{grid-row:1;display:flex;flex-direction:column;gap:10px;min-width:0}
-header.top > nav.topnav{grid-row:2;display:flex;gap:18px;flex-wrap:wrap}
-@media(max-width:640px){
-  header.top{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:22px;column-gap:0}
-  .avatar{width:96px;height:96px;margin:0 0 14px}
-  header.top > .who, header.top > nav.topnav{display:flex;flex-direction:column;align-items:center;gap:8px;grid-column:auto}
-  header.top > .who{width:100%}
-  .brand{font-size:15px;letter-spacing:0}
-  .brand span{display:block;margin-top:4px;font-size:13px}
-  nav.topnav{width:100%;flex-wrap:wrap;justify-content:center;gap:16px;font-size:12.5px;border-top:1px solid var(--line2);padding-top:12px;margin-top:2px}
-}
-/* lightbox */
-.lightbox{position:fixed;inset:0;background:rgba(8,8,10,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:24px}
-.lightbox.open{display:flex}
-.lightbox img{max-width:92vw;max-height:84vh;border-radius:18px;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--acid)}
-.lightbox .close{position:fixed;top:18px;right:22px;background:var(--bg2);border:1px solid var(--line);color:var(--mut);width:38px;height:38px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:.65;transition:opacity .15s,color .15s}
-.lightbox .close:hover{opacity:1;color:var(--acid)}
-</style>
-<div class="lightbox" id="lightbox">
-  <button class="close" aria-label="Close">✕</button>
-  <img src="about-photo.jpg" alt="Assis Devassy — full photo">
-</div>
-<script>
-(function(){
-  var lb=document.getElementById('lightbox');
-  document.getElementById('avatarBtn').addEventListener('click',function(){lb.classList.add('open')});
-  lb.addEventListener('click',function(e){ if(e.target===lb||e.target.className==='close') lb.classList.remove('open'); });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('open'); });
-})();
-</script><!-- refresh 1793444604 -->
