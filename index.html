@@ -103,6 +103,9 @@ section.s{padding:112px 0;border-top:1px solid var(--hairline)}
 .offer p{color:var(--ink-2);font-size:17px;margin-top:8px;max-width:60ch}
 .offer .how{color:var(--ink);font-size:16px;margin-top:14px}
 .offer .how b{font-weight:600}
+.vid{margin-top:20px;max-width:640px}
+.vid video{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:12px;background:var(--cream-deep,#E9E8CC)}
+.vid .tall{display:none}
 
 /* method */
 .method{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
@@ -182,6 +185,8 @@ footer a{text-underline-offset:3px}
   section.s{padding:80px 0}
   .shead{grid-template-columns:1fr;gap:16px;margin-bottom:40px}
   .offer{grid-template-columns:1fr;gap:10px;padding:24px 0}
+  .vid .wide{display:none}
+  .vid .tall{display:block;max-width:420px}
       .nav .long{display:none}
   .mark{font-size:21px}
     .steps,.builds{grid-template-columns:1fr}
@@ -253,6 +258,7 @@ footer a{text-underline-offset:3px}
           <p>Paste your website. It finds your three closest competitors, keeps the growth moves at least two of them repeat, and drops the ones your team or budget can't run.</p>
           <p class="how"><b>The approach.</b> Facts before advice: Google search data, Meta ads, LinkedIn and X posts, and what ChatGPT says when a buyer asks for a tool. Every move shows its proof, and you see why each move fits you or was left out.</p>
           <p class="proof"><b>Test run:</b> Youform against Jotform, Typeform and Fillout. All three were named in every ChatGPT answer checked, Youform in none.</p>
+          <figure class="vid"><video class="wide" controls preload="none" playsinline width="1920" height="1080" poster="video/growth-playbook-16x9.jpg" aria-label="Video: how the growth playbook agent works"><source src="video/growth-playbook-16x9.mp4" type="video/mp4"></video><video class="tall" controls preload="none" playsinline width="1080" height="1350" poster="video/growth-playbook-4x5.jpg" aria-label="Video: how the growth playbook agent works"><source src="video/growth-playbook-4x5.mp4" type="video/mp4"></video></figure>
           <a class="go" href="https://github.com/assisDevassy/growth-playbook-agent" target="_blank" rel="noopener">Open the repo on GitHub</a>
           <a class="go" href="https://htmlpreview.github.io/?https://github.com/assisDevassy/growth-playbook-agent/blob/main/examples/youform/playbook.html" target="_blank" rel="noopener">See the example playbook</a>
         </div>
@@ -264,6 +270,7 @@ footer a{text-underline-offset:3px}
           <p>It watches your Meta ad account every hour, pauses the ads losing money, moves budget to the winners and drafts new versions of your best ad.</p>
           <p class="how"><b>The approach.</b> You write the rules down in one file. For the first week it only lists what it would pause. When you agree with its calls, it starts acting, under a daily spend cap it cannot raise.</p>
           <p class="proof"><b>Test run:</b> a 14-day export of six made-up ads, every rule firing once, 10 tests passing. It only reports. It never touches an account.</p>
+          <figure class="vid"><video class="wide" controls preload="none" playsinline width="1920" height="1080" poster="video/ad-pause-agent-16x9.jpg" aria-label="Video: how the ad agent that pauses what loses works"><source src="video/ad-pause-agent-16x9.mp4" type="video/mp4"></video><video class="tall" controls preload="none" playsinline width="1080" height="1350" poster="video/ad-pause-agent-4x5.jpg" aria-label="Video: how the ad agent that pauses what loses works"><source src="video/ad-pause-agent-4x5.mp4" type="video/mp4"></video></figure>
           <a class="go" href="https://github.com/assisDevassy/ad-pause-agent" target="_blank" rel="noopener">Open the repo on GitHub</a>
         </div>
       </article>
